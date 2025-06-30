@@ -3,68 +3,55 @@ import pandas as pd
 import os
 
 # --- Page Configuration ---
-# This must be the first Streamlit command in your script.
 st.set_page_config(
-    page_title="Infection Risk Predictions",
+    page_title="Infection Risk Predictions Viewer",
     page_icon="🍇",
-    layout="wide",  # Use the full page width
+    layout="wide",
 )
 
 # --- App Title ---
-st.title("Vineyard Infection Risk Predictions")
+st.title("🍇 Vineyard Infection Risk Predictions Viewer")
 
+# --- File Uploader ---
+# This widget allows users to upload a CSV file.
+uploaded_file = st.file_uploader(
+    "Upload your infection risk predictions CSV file",
+    type=["csv"]
+)
 
-# --- Data Loading ---
-# We use a function with caching to prevent reloading the data on every interaction.
-@st.cache_data
-def load_data(file_path):
-    """
-    Loads the prediction data from a CSV file.
-    Returns a pandas DataFrame.
-    """
-    if not os.path.exists(file_path):
-        # In a real scenario, you'd have an error. For this demo, we create a dummy file.
-        st.error(f"Error: The data file was not found at '{file_path}'. A dummy dataset is being shown.")
-        dummy_data = {
-            'Vigneto_IdVigneto': [101, 102, 101, 103, 102],
-            'Codice': ['V01', 'V02', 'V01', 'V03', 'V02'],
-            'NomeVigneto': ['Sunrise Field', 'West Valley', 'Sunrise Field', 'Hilltop Plot', 'West Valley'],
-            'PredictionDate': ['2025-07-01', '2025-07-01', '2025-07-02', '2025-07-02', '2025-07-03'],
-            'Oidium_pred': [1, 0, 1, 0, 1],
-            'Oidium_risk': [0.78, 0.32, 0.91, 0.45, 0.65],
-            'Peronospora_pred': [0, 1, 0, 1, 1],
-            'Peronospora_risk': [0.21, 0.88, 0.15, 0.76, 0.81]
-        }
-        # FIX: Convert date column for dummy data to ensure consistent data types
-        df_dummy = pd.DataFrame(dummy_data)
-        df_dummy['PredictionDate'] = pd.to_datetime(df_dummy['PredictionDate'])
-        return df_dummy
-
+# --- Main App Logic ---
+# The app will only proceed if a file has been successfully uploaded.
+if uploaded_file is not None:
     try:
-        df = pd.read_csv(file_path)
-        # Convert date column to datetime objects for better sorting/filtering
-        df['PredictionDate'] = pd.to_datetime(df['PredictionDate'])
-        return df
+        # Read the uploaded CSV file into a pandas DataFrame
+        df_original = pd.read_csv(uploaded_file)
+
+        # --- Data Validation and Transformation ---
+        # Ensure the 'PredictionDate' column exists and convert it to datetime
+        if 'PredictionDate' in df_original.columns:
+            df_original['PredictionDate'] = pd.to_datetime(df_original['PredictionDate'])
+        else:
+            st.error("Error: The uploaded CSV must contain a 'PredictionDate' column.")
+            st.stop()  # Stop execution if the required column is missing
+
     except Exception as e:
-        st.error(f"An error occurred while reading the data file: {e}")
-        return pd.DataFrame()  # Return empty dataframe on error
+        st.error(f"An error occurred while reading or processing the file: {e}")
+        st.stop()
 
-
-# Load the data
-CSV_FILE = 'infection_risk_predictions.csv'
-df_original = load_data(CSV_FILE)
-
-if not df_original.empty:
     # --- Sidebar for Filtering ---
     st.sidebar.header("Filter Options")
 
     # Filter by Vineyard Name (multiselect)
-    vineyard_names = df_original['NomeVigneto'].unique()
-    selected_vineyards = st.sidebar.multiselect(
-        "Select Vineyard(s)",
-        options=sorted(vineyard_names),
-        default=[]  # Empty default means show all
-    )
+    if 'NomeVigneto' in df_original.columns:
+        vineyard_names = df_original['NomeVigneto'].unique()
+        selected_vineyards = st.sidebar.multiselect(
+            "Select Vineyard(s)",
+            options=sorted(vineyard_names),
+            default=[]  # Empty default means show all
+        )
+    else:
+        selected_vineyards = []
+        st.sidebar.warning("'NomeVigneto' column not found for filtering.")
 
     # Filter by Date Range
     min_date = df_original['PredictionDate'].min().date()
@@ -77,14 +64,17 @@ if not df_original.empty:
     )
 
     # Filter by Risk Score (slider)
-    min_risk, max_risk = 0.0, 1.0
-    selected_risk_range = st.sidebar.slider(
-        "Filter by Highest Risk (Oidium or Peronospora)",
-        min_value=min_risk,
-        max_value=max_risk,
-        value=(min_risk, max_risk),  # Default is the full range
-        step=0.05
-    )
+    if 'Oidium_risk' in df_original.columns and 'Peronospora_risk' in df_original.columns:
+        selected_risk_range = st.sidebar.slider(
+            "Filter by Highest Risk (Oidium or Peronospora)",
+            min_value=0.0,
+            max_value=1.0,
+            value=(0.0, 1.0),  # Default is the full range
+            step=0.05
+        )
+    else:
+        selected_risk_range = (0.0, 1.0)
+        st.sidebar.warning("Risk columns not found for filtering.")
 
     # --- Applying Filters ---
     df_filtered = df_original.copy()
@@ -103,21 +93,22 @@ if not df_original.empty:
             ]
 
     # Apply risk score filter
-    df_filtered = df_filtered[
-        (df_filtered['Oidium_risk'] >= selected_risk_range[0]) |
-        (df_filtered['Peronospora_risk'] >= selected_risk_range[0])
-        ]
-    df_filtered = df_filtered[
-        (df_filtered['Oidium_risk'] <= selected_risk_range[1]) |
-        (df_filtered['Peronospora_risk'] <= selected_risk_range[1])
-        ]
+    if 'Oidium_risk' in df_filtered.columns and 'Peronospora_risk' in df_filtered.columns:
+        df_filtered = df_filtered[
+            (df_filtered['Oidium_risk'] >= selected_risk_range[0]) |
+            (df_filtered['Peronospora_risk'] >= selected_risk_range[0])
+            ]
+        df_filtered = df_filtered[
+            (df_filtered['Oidium_risk'] <= selected_risk_range[1]) |
+            (df_filtered['Peronospora_risk'] <= selected_risk_range[1])
+            ]
 
     # --- Displaying the Data ---
     st.header("Prediction Results")
-    st.write(f"Displaying {len(df_filtered)} of {len(df_original)} total predictions.")
+    st.write(
+        f"Displaying {len(df_filtered)} of {len(df_original)} total predictions from uploaded file: `{uploaded_file.name}`")
 
     # Display the filtered dataframe
-    # st.dataframe allows for interactive sorting by clicking on headers.
     st.dataframe(df_filtered.sort_values(by="Vigneto_IdVigneto"), use_container_width=True)
 
     # --- Show Raw Data (optional) ---
@@ -125,4 +116,6 @@ if not df_original.empty:
         st.write(df_filtered)
 
 else:
-    st.warning("Could not load prediction data.")
+    # This message is shown when the app first loads, before any file is uploaded.
+    st.info("Please upload a CSV file to view the predictions.")
+
