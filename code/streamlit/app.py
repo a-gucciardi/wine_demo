@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import os
+import requests
+from io import StringIO
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -10,34 +11,49 @@ st.set_page_config(
 )
 
 # --- App Title ---
-st.title("🍇 Vineyard Infection Risk Predictions Viewer")
+st.title("Vineyard Infection Risk Predictions Viewer")
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_predictions.csv"
 
-# --- File Uploader ---
-# This widget allows users to upload a CSV file.
-uploaded_file = st.file_uploader(
-    "Upload your infection risk predictions CSV file",
-    type=["csv"]
-)
 
-# --- Main App Logic ---
-# The app will only proceed if a file has been successfully uploaded.
-if uploaded_file is not None:
+# --- Data Loading ---
+# This function now loads data directly from the GitHub URL using the robust requests method.
+@st.cache_data
+def load_data_from_url(url):
+    """
+    Loads prediction data from a raw GitHub URL using the requests library.
+    Returns a pandas DataFrame.
+    """
     try:
-        # Read the uploaded CSV file into a pandas DataFrame
-        df_original = pd.read_csv(uploaded_file)
+        response = requests.get(url)
+        response.raise_for_status()  # This will raise an exception for bad status codes (4xx or 5xx)
+
+        # Use StringIO to treat the string data as a file
+        csv_file = StringIO(response.text)
+
+        df = pd.read_csv(csv_file)
 
         # --- Data Validation and Transformation ---
-        # Ensure the 'PredictionDate' column exists and convert it to datetime
-        if 'PredictionDate' in df_original.columns:
-            df_original['PredictionDate'] = pd.to_datetime(df_original['PredictionDate'])
+        if 'PredictionDate' in df.columns:
+            df['PredictionDate'] = pd.to_datetime(df['PredictionDate'])
+            return df
         else:
-            st.error("Error: The uploaded CSV must contain a 'PredictionDate' column.")
-            st.stop()  # Stop execution if the required column is missing
+            st.error("Error: The CSV file from the URL must contain a 'PredictionDate' column.")
+            return None
 
+    except requests.exceptions.RequestException as e:
+        st.error(f"Error fetching data from URL: {e}")
+        st.info("Please make sure the GitHub URL is correct and the repository is public.")
+        return None
     except Exception as e:
-        st.error(f"An error occurred while reading or processing the file: {e}")
-        st.stop()
+        st.error(f"An error occurred while processing the data: {e}")
+        return None
 
+
+# --- Main App Logic ---
+df_original = load_data_from_url(GITHUB_RAW_URL)
+
+# The rest of the app will only proceed if the data has been successfully loaded.
+if df_original is not None:
     # --- Sidebar for Filtering ---
     st.sidebar.header("Filter Options")
 
@@ -47,7 +63,7 @@ if uploaded_file is not None:
         selected_vineyards = st.sidebar.multiselect(
             "Select Vineyard(s)",
             options=sorted(vineyard_names),
-            default=[]  # Empty default means show all
+            default=[]
         )
     else:
         selected_vineyards = []
@@ -69,7 +85,7 @@ if uploaded_file is not None:
             "Filter by Highest Risk (Oidium or Peronospora)",
             min_value=0.0,
             max_value=1.0,
-            value=(0.0, 1.0),  # Default is the full range
+            value=(0.0, 1.0),
             step=0.05
         )
     else:
@@ -79,11 +95,9 @@ if uploaded_file is not None:
     # --- Applying Filters ---
     df_filtered = df_original.copy()
 
-    # Apply vineyard filter
     if selected_vineyards:
         df_filtered = df_filtered[df_filtered['NomeVigneto'].isin(selected_vineyards)]
 
-    # Apply date range filter
     if len(selected_date_range) == 2:
         start_date = pd.to_datetime(selected_date_range[0])
         end_date = pd.to_datetime(selected_date_range[1])
@@ -92,7 +106,6 @@ if uploaded_file is not None:
             (df_filtered['PredictionDate'] <= end_date)
             ]
 
-    # Apply risk score filter
     if 'Oidium_risk' in df_filtered.columns and 'Peronospora_risk' in df_filtered.columns:
         df_filtered = df_filtered[
             (df_filtered['Oidium_risk'] >= selected_risk_range[0]) |
@@ -105,17 +118,8 @@ if uploaded_file is not None:
 
     # --- Displaying the Data ---
     st.header("Prediction Results")
-    st.write(
-        f"Displaying {len(df_filtered)} of {len(df_original)} total predictions from uploaded file: `{uploaded_file.name}`")
-
-    # Display the filtered dataframe
+    st.write(f"Displaying {len(df_filtered)} of {len(df_original)} total predictions.")
     st.dataframe(df_filtered.sort_values(by="Vigneto_IdVigneto"), use_container_width=True)
 
-    # --- Show Raw Data (optional) ---
     if st.checkbox("Show raw data for filtered results"):
         st.write(df_filtered)
-
-else:
-    # This message is shown when the app first loads, before any file is uploaded.
-    st.info("Please upload a CSV file to view the predictions.")
-
