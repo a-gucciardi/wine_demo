@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from io import StringIO
+from datetime import datetime
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -12,7 +13,8 @@ st.set_page_config(
 
 # --- App Title ---
 st.title("Vineyard Infection Risk Predictions Viewer")
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_predictions.csv"
+today = datetime.today()
+GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_predictions_{today}.csv"
 
 
 # --- Data Loading ---
