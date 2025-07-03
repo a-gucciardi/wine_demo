@@ -36,12 +36,12 @@ def load_data_from_url(url):
 
         # --- Data Validation and Transformation ---
         # Check if we have the expected columns
-        if 'IdVigneto' not in df.columns or 'Infection' not in df.columns:
-            st.error("Error: The CSV file must contain 'IdVigneto' and 'Infection' columns.")
+        if 'Ente' not in df.columns or 'IdVigneto' not in df.columns or 'Infection' not in df.columns:
+            st.error("Error: The CSV file must contain 'Ente', 'IdVigneto' and 'Infection' columns.")
             return None
 
         # Get date columns (all columns that are not metadata)
-        metadata_cols = ['IdVigneto', 'Codice', 'NomeVigneto', 'Infection']
+        metadata_cols = ['Ente', 'IdVigneto', 'Codice', 'NomeVigneto', 'Infection']
         date_cols = [col for col in df.columns if col not in metadata_cols]
 
         if not date_cols:
@@ -77,6 +77,18 @@ if df_original is not None:
 
     # --- Sidebar for Filtering ---
     st.sidebar.header("Filter Options")
+
+    # Filter by Company/Ente (multiselect)
+    if 'Ente' in df_original.columns:
+        ente_values = sorted(df_original['Ente'].unique())
+        selected_entes = st.sidebar.multiselect(
+            "Select Company/Ente",
+            options=ente_values,
+            default=[]
+        )
+    else:
+        selected_entes = []
+        st.sidebar.warning("'Ente' column not found for filtering.")
 
     # Filter by Vineyard Name (multiselect)
     if 'NomeVigneto' in df_original.columns:
@@ -134,6 +146,9 @@ if df_original is not None:
     # --- Applying Filters ---
     df_filtered = df_original.copy()
 
+    if selected_entes:
+        df_filtered = df_filtered[df_filtered['Ente'].isin(selected_entes)]
+
     if selected_vineyards:
         df_filtered = df_filtered[df_filtered['NomeVigneto'].isin(selected_vineyards)]
 
@@ -174,7 +189,7 @@ if df_original is not None:
         if col in df_display.columns:
             df_display[col] = (df_display[col] * 100).round(1).astype(str) + '%'
 
-    st.dataframe(df_display.sort_values(by=["IdVigneto", "Infection"]), use_container_width=True)
+    st.dataframe(df_display.sort_values(by=["Ente", "IdVigneto", "Infection"]), use_container_width=True)
 
     if st.checkbox("Show raw data for filtered results"):
         st.write(df_filtered[display_cols])
