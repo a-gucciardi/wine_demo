@@ -14,7 +14,8 @@ st.set_page_config(
 # --- App Title ---
 st.title("Vineyard Infection Risk Predictions Viewer")
 today = datetime.today().date()
-GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_predictions_{today}.csv"
+# GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_predictions_{today}.csv"
+GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_7days_{today}.csv"
 
 
 # --- Data Loading ---
