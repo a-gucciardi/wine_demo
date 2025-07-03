@@ -75,7 +75,7 @@ def load_data_from_url(url):
 
         # Rename disease columns to match old format
         if 'Oidium' in df_pivot.columns:
-            df_pivot['Oidium_risk'] = df_pivot['Oidium']D
+            df_pivot['Oidium_risk'] = df_pivot['Oidium']
             df_pivot.drop('Oidium', axis=1, inplace=True)
 
         if 'Peronospora' in df_pivot.columns:
