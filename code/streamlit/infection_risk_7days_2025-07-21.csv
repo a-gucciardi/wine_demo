@@ -1,0 +1,1007 @@
+Ente,IdVigneto,Codice,NomeVigneto,Infection,2025-07-21,2025-07-22,2025-07-23,2025-07-24,2025-07-25,2025-07-26,2025-07-27
+9,1,RSSPG28,Pg - Casarsa,Oidium,34%,26%,22%,31%,39%,33%,35%
+9,1,RSSPG28,Pg - Casarsa,Peronospora,66%,74%,78%,69%,61%,67%,65%
+9,6,RSSPB27,Pg - Spessa,Oidium,31%,25%,23%,29%,37%,33%,38%
+9,6,RSSPB27,Pg - Spessa,Peronospora,69%,75%,77%,71%,63%,67%,62%
+40,158,CENMR01,Mer-Terrazze,Oidium,28%,24%,21%,28%,39%,35%,39%
+40,158,CENMR01,Mer-Terrazze,Peronospora,72%,76%,79%,72%,61%,65%,61%
+9,180,RSSPG18,Sau - Lungo Strada Sinistra 1,Oidium,26%,20%,20%,34%,42%,31%,43%
+9,180,RSSPG18,Sau - Lungo Strada Sinistra 1,Peronospora,74%,80%,80%,66%,58%,69%,57%
+9,246,RSSSV27,Sau - Municipio,Oidium,29%,24%,22%,31%,37%,31%,41%
+9,246,RSSSV27,Sau - Municipio,Peronospora,71%,76%,78%,69%,63%,69%,59%
+9,304,RSSSV27,Sau - Castello,Oidium,30%,27%,19%,29%,39%,38%,39%
+9,304,RSSSV27,Sau - Castello,Peronospora,70%,73%,81%,71%,61%,62%,61%
+9,323,RSSRIB04,Rib - Rudere,Oidium,31%,27%,19%,29%,39%,39%,39%
+9,323,RSSRIB04,Rib - Rudere,Peronospora,69%,73%,81%,71%,61%,61%,61%
+9,367,RSSFR26,Rib - Scuola,Oidium,30%,28%,26%,30%,41%,34%,37%
+9,367,RSSFR26,Rib - Scuola,Peronospora,70%,72%,74%,70%,59%,66%,63%
+15,392,RSSPB27,Pb - Casarsa,Oidium,25%,32%,24%,29%,35%,31%,35%
+15,392,RSSPB27,Pb - Casarsa,Peronospora,75%,68%,76%,71%,65%,69%,65%
+-1,505,BGTTC01,ToFr-Pradis,Oidium,22%,22%,24%,25%,34%,32%,33%
+-1,505,BGTTC01,ToFr-Pradis,Peronospora,78%,78%,76%,75%,66%,68%,67%
+15,535,VRSFR22,ToFr-Sant'Antonio,Oidium,21%,21%,15%,29%,36%,28%,35%
+15,535,VRSFR22,ToFr-Sant'Antonio,Peronospora,79%,79%,85%,71%,64%,72%,65%
+15,581,VRSMR04,Mer-Cipressi,Oidium,31%,25%,23%,37%,35%,29%,35%
+15,581,VRSMR04,Mer-Cipressi,Peronospora,69%,75%,77%,63%,65%,71%,65%
+15,677,VRSMR23,Rib - Palazzo,Oidium,31%,26%,23%,37%,35%,30%,35%
+15,677,VRSMR23,Rib - Palazzo,Peronospora,69%,74%,77%,63%,65%,70%,65%
+15,708,VRSMR24,Mer - Curva,Oidium,23%,18%,23%,32%,35%,32%,34%
+15,708,VRSMR24,Mer - Curva,Peronospora,77%,82%,77%,68%,65%,68%,66%
+15,735,VRSMR27,Sau - vicino Silvoz Mossa,Oidium,18%,20%,21%,34%,41%,24%,39%
+15,735,VRSMR27,Sau - vicino Silvoz Mossa,Peronospora,82%,80%,79%,66%,59%,76%,61%
+15,769,VRSMR28,Cha - Mossa,Oidium,28%,24%,23%,37%,35%,32%,41%
+15,769,VRSMR28,Cha - Mossa,Peronospora,72%,76%,77%,63%,65%,68%,59%
+15,789,VRSCHA04,Ch-Bino,Oidium,28%,26%,25%,39%,36%,32%,40%
+15,789,VRSCHA04,Ch-Bino,Peronospora,72%,74%,75%,61%,64%,68%,60%
+16,792,VRSSV20,Pn - Basso Piramide,Oidium,28%,24%,23%,37%,35%,32%,41%
+16,792,VRSSV20,Pn - Basso Piramide,Peronospora,72%,76%,77%,63%,65%,68%,59%
+16,827,VRSSV20,Sau - Basso Pighin,Oidium,30%,24%,20%,33%,32%,30%,34%
+16,827,VRSSV20,Sau - Basso Pighin,Peronospora,70%,76%,80%,67%,68%,70%,66%
+16,887,VRSPG20,Pg-VignaGrande,Oidium,27%,24%,25%,34%,38%,31%,39%
+16,887,VRSPG20,Pg-VignaGrande,Peronospora,73%,76%,75%,66%,62%,69%,61%
+16,906,VRSMR35,Mer - Sant'Antonio,Oidium,32%,24%,22%,27%,34%,29%,35%
+16,906,VRSMR35,Mer - Sant'Antonio,Peronospora,68%,76%,78%,73%,66%,71%,65%
+16,914,VRSPB20,Pb-Capriva,Oidium,28%,22%,23%,28%,34%,28%,36%
+16,914,VRSPB20,Pb-Capriva,Peronospora,72%,78%,77%,72%,66%,72%,64%
+16,934,VRSPG24,Pg-Pighin,Oidium,31%,24%,25%,35%,34%,26%,34%
+16,934,VRSPG24,Pg-Pighin,Peronospora,69%,76%,75%,65%,66%,74%,66%
+17,942,VRSPG27,Pg - Basso Pighin,Oidium,34%,25%,26%,34%,41%,30%,38%
+17,942,VRSPG27,Pg - Basso Pighin,Peronospora,66%,75%,74%,66%,59%,70%,62%
+18,1065,VRSSV36,Sau - Moretti Pighin ,Oidium,31%,24%,21%,27%,34%,29%,35%
+18,1065,VRSSV36,Sau - Moretti Pighin ,Peronospora,69%,76%,79%,73%,66%,71%,65%
+18,1135,VRSSV36,Sv-Pighin2,Oidium,33%,23%,23%,38%,39%,32%,44%
+18,1135,VRSSV36,Sv-Pighin2,Peronospora,67%,77%,77%,62%,61%,68%,56%
+20,1171,VRSPG29,Pg-Pighin1,Oidium,31%,22%,24%,37%,36%,31%,43%
+20,1171,VRSPG29,Pg-Pighin1,Peronospora,69%,78%,76%,63%,64%,69%,57%
+20,1200,BGTCH02,Ch- SanQuirino,Oidium,27%,24%,28%,31%,34%,32%,28%
+20,1200,BGTCH02,Ch- SanQuirino,Peronospora,73%,76%,72%,69%,66%,68%,72%
+21,1228,BGTVER01,Ver-SanQuirino,Oidium,39%,36%,44%,31%,45%,35%,32%
+21,1228,BGTVER01,Ver-SanQuirino,Peronospora,61%,64%,56%,69%,55%,65%,68%
+21,1308,BGTCSV01,Csv-SanQuirino,Oidium,33%,34%,37%,31%,34%,31%,35%
+21,1308,BGTCSV01,Csv-SanQuirino,Peronospora,67%,66%,63%,69%,66%,69%,65%
+21,1314,SFEPG01,Pg-Chiesa,Oidium,42%,41%,41%,39%,40%,31%,39%
+21,1314,SFEPG01,Pg-Chiesa,Peronospora,58%,59%,59%,61%,60%,69%,61%
+-1,1328,SRECH01,Ch-Gorga,Oidium,26%,16%,33%,23%,36%,28%,32%
+-1,1328,SRECH01,Ch-Gorga,Peronospora,74%,84%,67%,77%,64%,72%,68%
+21,1346,SFEMR01,Mer-Braida,Oidium,36%,43%,52%,45%,45%,41%,43%
+21,1346,SFEMR01,Mer-Braida,Peronospora,64%,57%,48%,55%,55%,59%,57%
+21,1353,SFEME02,Me-Braida,Oidium,40%,32%,34%,34%,40%,37%,35%
+21,1353,SFEME02,Me-Braida,Peronospora,60%,68%,66%,66%,60%,63%,65%
+21,1548,SFETC01,Sch-Potok,Oidium,30%,27%,28%,28%,26%,31%,32%
+21,1548,SFETC01,Sch-Potok,Peronospora,70%,73%,72%,72%,74%,69%,68%
+21,1594,SFECH04,Ch-mirnik,Oidium,28%,32%,25%,35%,36%,41%,33%
+21,1594,SFECH04,Ch-mirnik,Peronospora,72%,68%,75%,65%,64%,59%,67%
+24,1641,SFEMR02,Mer-Mirnik,Oidium,34%,33%,35%,39%,34%,35%,36%
+24,1641,SFEMR02,Mer-Mirnik,Peronospora,66%,67%,65%,61%,66%,65%,64%
+24,1702,SFECSV04,Csv-Giovanin,Oidium,29%,34%,28%,35%,29%,41%,40%
+24,1702,SFECSV04,Csv-Giovanin,Peronospora,71%,66%,72%,65%,71%,59%,60%
+24,1772,SFESV01,Sv-Giovanin,Oidium,29%,26%,29%,28%,25%,39%,36%
+24,1772,SFESV01,Sv-Giovanin,Peronospora,71%,74%,71%,72%,75%,61%,64%
+24,1789,SFEMAL01,Mal-Ronc,Oidium,33%,31%,27%,36%,29%,45%,39%
+24,1789,SFEMAL01,Mal-Ronc,Peronospora,67%,69%,73%,64%,71%,55%,61%
+24,1802,SFECH01,Ch-ronc,Oidium,31%,28%,28%,27%,24%,32%,36%
+24,1802,SFECH01,Ch-ronc,Peronospora,69%,72%,72%,73%,76%,68%,64%
+24,1856,SFERB05,RibG-ronc,Oidium,29%,32%,26%,38%,38%,43%,40%
+24,1856,SFERB05,RibG-ronc,Peronospora,71%,68%,74%,62%,62%,57%,60%
+24,1880,SFESCH01,Sch-Lidia,Oidium,31%,30%,29%,32%,29%,38%,29%
+24,1880,SFESCH01,Sch-Lidia,Peronospora,69%,70%,71%,68%,71%,62%,71%
+24,2048,SFECAR01,Car-Lidia,Oidium,28%,24%,25%,29%,35%,33%,39%
+24,2048,SFECAR01,Car-Lidia,Peronospora,72%,76%,75%,71%,65%,67%,61%
+24,2063,SFECSV02,Csv-Lidia,Oidium,32%,23%,20%,28%,39%,35%,32%
+24,2063,SFECSV02,Csv-Lidia,Peronospora,68%,77%,80%,72%,61%,65%,68%
+26,2093,SFEMR03,Mer-Lidia,Oidium,30%,21%,22%,34%,36%,31%,43%
+26,2093,SFEMR03,Mer-Lidia,Peronospora,70%,79%,78%,66%,64%,69%,57%
+-1,2102,SREPB01,Pb-Genoveffa,Oidium,27%,25%,26%,28%,34%,33%,29%
+-1,2102,SREPB01,Pb-Genoveffa,Peronospora,73%,75%,74%,72%,66%,67%,71%
+2,2124,SFEREF01,Rib-poggio_lonzanoalto,Oidium,27%,25%,25%,34%,38%,31%,39%
+2,2124,SFEREF01,Rib-poggio_lonzanoalto,Peronospora,73%,75%,75%,66%,62%,69%,61%
+2,2243,SFESCH02,Sch-Prepotto,Oidium,26%,16%,31%,26%,39%,29%,34%
+2,2243,SFESCH02,Sch-Prepotto,Peronospora,74%,84%,69%,74%,61%,71%,66%
+2,2248,SFECAR02,Car-Prepotto,Oidium,26%,15%,35%,23%,37%,27%,32%
+2,2248,SFECAR02,Car-Prepotto,Peronospora,74%,85%,65%,77%,63%,73%,68%
+2,2263,SFEPG03,Pg-LonzanoBasso,Oidium,40%,40%,43%,34%,44%,39%,31%
+2,2263,SFEPG03,Pg-LonzanoBasso,Peronospora,60%,60%,57%,66%,56%,61%,69%
+4,2302,SFEMR04,Mer-Lonzano basso,Oidium,43%,39%,35%,28%,37%,36%,34%
+4,2302,SFEMR04,Mer-Lonzano basso,Peronospora,57%,61%,65%,72%,63%,64%,66%
+4,2331,SFETC04,ToFr-Lonzano basso,Oidium,33%,33%,35%,33%,35%,32%,35%
+4,2331,SFETC04,ToFr-Lonzano basso,Peronospora,67%,67%,65%,67%,65%,68%,65%
+4,2523,SFERS01,Rie-lonzano basso,Oidium,35%,38%,42%,35%,48%,37%,23%
+4,2523,SFERS01,Rie-lonzano basso,Peronospora,65%,62%,58%,65%,52%,63%,77%
+40,2727,CENPG02,Pg-Terrazze,Oidium,38%,38%,39%,37%,45%,36%,36%
+40,2727,CENPG02,Pg-Terrazze,Peronospora,62%,62%,61%,63%,55%,64%,64%
+-1,2763,SREPG01,Pg-Genoveffa,Oidium,30%,26%,21%,29%,43%,36%,38%
+-1,2763,SREPG01,Pg-Genoveffa,Peronospora,70%,74%,79%,71%,57%,64%,62%
+4,2793,SFECH05,Ch-lonzano basso,Oidium,28%,24%,20%,29%,39%,35%,39%
+4,2793,SFECH05,Ch-lonzano basso,Peronospora,72%,76%,80%,71%,61%,65%,61%
+4,2888,SFEMAL02,Mal- Lonzano basso,Oidium,32%,36%,36%,32%,36%,38%,40%
+4,2888,SFEMAL02,Mal- Lonzano basso,Peronospora,68%,64%,64%,68%,64%,62%,60%
+4,2918,SFESCH03,Sch-Lonzano basso,Oidium,29%,25%,33%,30%,34%,28%,31%
+4,2918,SFESCH03,Sch-Lonzano basso,Peronospora,71%,75%,67%,70%,66%,72%,69%
+44,3034,ERMMER01,Mer-Bosco,Oidium,50%,63%,59%,64%,62%,59%,55%
+44,3034,ERMMER01,Mer-Bosco,Peronospora,50%,37%,41%,36%,38%,41%,45%
+44,3129,ERMFRI01,ToFr-Bosco,Oidium,36%,39%,39%,37%,46%,45%,46%
+44,3129,ERMFRI01,ToFr-Bosco,Peronospora,64%,61%,61%,63%,54%,55%,54%
+4,3132,SFESV02,Sv-Ferreghini,Oidium,30%,23%,22%,34%,37%,31%,31%
+4,3132,SFESV02,Sv-Ferreghini,Peronospora,70%,77%,78%,66%,63%,69%,69%
+4,3311,SFEMR05,Mer-Ferreghini,Oidium,35%,41%,41%,36%,38%,36%,36%
+4,3311,SFEMR05,Mer-Ferreghini,Peronospora,65%,59%,59%,64%,62%,64%,64%
+4,3316,SFEMR06,Mer-Ferreghini1,Oidium,31%,41%,43%,38%,37%,36%,35%
+4,3316,SFEMR06,Mer-Ferreghini1,Peronospora,69%,59%,57%,62%,63%,64%,65%
+4,3322,SFETC03,ToFr-Restocina,Oidium,32%,45%,33%,30%,25%,29%,38%
+4,3322,SFETC03,ToFr-Restocina,Peronospora,68%,55%,67%,70%,75%,71%,62%
+44,3372,ERMCHA01,Ch-Cantarutti,Oidium,45%,52%,51%,58%,60%,53%,50%
+44,3372,ERMCHA01,Ch-Cantarutti,Peronospora,55%,48%,49%,42%,40%,47%,50%
+44,3378,ERMFRI11,ToFr-Cantarutti,Oidium,30%,48%,50%,53%,58%,65%,61%
+44,3378,ERMFRI11,ToFr-Cantarutti,Peronospora,70%,52%,50%,47%,42%,35%,39%
+44,3390,ERMPIG02,Pig-Mario Cantina,Oidium,39%,49%,54%,53%,58%,55%,57%
+44,3390,ERMPIG02,Pig-Mario Cantina,Peronospora,61%,51%,46%,47%,42%,45%,43%
+44,3754,ERMPING06,Pg-Mario,Oidium,43%,37%,34%,31%,33%,38%,49%
+44,3754,ERMPING06,Pg-Mario,Peronospora,57%,63%,66%,69%,67%,62%,51%
+40,3797,CENSV03,Sv-Terrazze,Oidium,35%,29%,42%,35%,34%,27%,39%
+40,3797,CENSV03,Sv-Terrazze,Peronospora,65%,71%,58%,65%,66%,73%,61%
+-1,3823,VIARIS01,Rie-Bosco,Oidium,34%,29%,37%,36%,36%,28%,37%
+-1,3823,VIARIS01,Rie-Bosco,Peronospora,66%,71%,63%,64%,64%,72%,63%
+4,3880,SFECH03,Ch-restocina1,Oidium,38%,33%,38%,31%,34%,32%,35%
+4,3880,SFECH03,Ch-restocina1,Peronospora,62%,67%,62%,69%,66%,68%,65%
+-1,3940,VIAPG01,Pg-Bosco,Oidium,33%,24%,22%,30%,38%,35%,32%
+-1,3940,VIAPG01,Pg-Bosco,Peronospora,67%,76%,78%,70%,62%,65%,68%
+4,3973,SFECH02,ToFr-Restocina_gradoni,Oidium,30%,25%,24%,25%,27%,29%,26%
+4,3973,SFECH02,ToFr-Restocina_gradoni,Peronospora,70%,75%,76%,75%,73%,71%,74%
+4,4223,SFERB04,RibG-restocina,Oidium,37%,35%,39%,35%,36%,35%,39%
+4,4223,SFERB04,RibG-restocina,Peronospora,63%,65%,61%,65%,64%,65%,61%
+4,4227,SFESV03,Sv-Basso_Bodigoi,Oidium,38%,31%,36%,32%,43%,33%,30%
+4,4227,SFESV03,Sv-Basso_Bodigoi,Peronospora,62%,69%,64%,68%,57%,67%,70%
+4,4338,SFEPG03,Rib-Vecchia_lonzanoAlto,Oidium,36%,33%,37%,31%,37%,25%,36%
+4,4338,SFEPG03,Rib-Vecchia_lonzanoAlto,Peronospora,64%,67%,63%,69%,63%,75%,64%
+4,4350,SFEMR04,Pb-LonzanoAlto,Oidium,27%,24%,24%,28%,33%,31%,32%
+4,4350,SFEMR04,Pb-LonzanoAlto,Peronospora,73%,76%,76%,72%,67%,69%,68%
+4,4557,SFETC04,Rib-SottoCasa_restocina,Oidium,30%,25%,38%,31%,37%,22%,40%
+4,4557,SFETC04,Rib-SottoCasa_restocina,Peronospora,70%,75%,62%,69%,63%,78%,60%
+4,4567,SFERS01,Sv-Restocina,Oidium,30%,28%,39%,37%,38%,33%,35%
+4,4567,SFERS01,Sv-Restocina,Peronospora,70%,72%,61%,63%,62%,67%,65%
+4,4832,SFECH05,Rib-Scriò_Bodigoi,Oidium,27%,23%,28%,26%,35%,33%,34%
+4,4832,SFECH05,Rib-Scriò_Bodigoi,Peronospora,73%,77%,72%,74%,65%,67%,66%
+4,4942,SFEMAL02,Carm-Paolin,Oidium,28%,24%,19%,28%,40%,32%,36%
+4,4942,SFEMAL02,Carm-Paolin,Peronospora,72%,76%,81%,72%,60%,68%,64%
+4,5015,,friulano-Cantina_Bodi,Oidium,27%,24%,26%,33%,37%,31%,38%
+4,5015,,friulano-Cantina_Bodi,Peronospora,73%,76%,74%,67%,63%,69%,62%
+-1,5240,VIAPB01,Pb-Bosco,Oidium,40%,40%,43%,34%,43%,39%,31%
+-1,5240,VIAPB01,Pb-Bosco,Peronospora,60%,60%,57%,66%,57%,61%,69%
+4,5256,SFEPB02,Pb-Case,Oidium,26%,21%,19%,27%,35%,33%,39%
+4,5256,SFEPB02,Pb-Case,Peronospora,74%,79%,81%,73%,65%,67%,61%
+4,5297,LENMER01,Mer - Golan,Oidium,49%,45%,48%,51%,50%,40%,35%
+4,5297,LENMER01,Mer - Golan,Peronospora,51%,55%,52%,49%,50%,60%,65%
+4,5310,LENCSV01,Csv - Golan,Oidium,33%,39%,41%,35%,39%,31%,23%
+4,5310,LENCSV01,Csv - Golan,Peronospora,67%,61%,59%,65%,61%,69%,77%
+-1,5409,VIAVERPIC01,Ver/Pic-Bosco,Oidium,30%,24%,25%,28%,37%,32%,37%
+-1,5409,VIAVERPIC01,Ver/Pic-Bosco,Peronospora,70%,76%,75%,72%,63%,68%,63%
+-1,5415,VIAPIG01,Pig-Judrio,Oidium,21%,15%,16%,20%,15%,17%,26%
+-1,5415,VIAPIG01,Pig-Judrio,Peronospora,79%,85%,84%,80%,85%,83%,74%
+4,5427,LENTF01,ToFr - Golan,Oidium,24%,16%,24%,31%,38%,29%,35%
+4,5427,LENTF01,ToFr - Golan,Peronospora,76%,84%,76%,69%,62%,71%,65%
+-1,5457,VIATF01,ToFr-CollinaVecchia,Oidium,27%,30%,36%,31%,30%,34%,41%
+-1,5457,VIATF01,ToFr-CollinaVecchia,Peronospora,73%,70%,64%,69%,70%,66%,59%
+4,5460,LENSCH01,Sch-Albana,Oidium,27%,30%,36%,31%,30%,34%,41%
+4,5460,LENSCH01,Sch-Albana,Peronospora,73%,70%,64%,69%,70%,66%,59%
+-1,5464,VIARB01,Rib-CollinaVecchia,Oidium,33%,28%,33%,29%,35%,28%,36%
+-1,5464,VIARB01,Rib-CollinaVecchia,Peronospora,67%,72%,67%,71%,65%,72%,64%
+4,5553,LENCAR02,Car-Albana,Oidium,30%,31%,32%,33%,33%,38%,36%
+4,5553,LENCAR02,Car-Albana,Peronospora,70%,69%,68%,67%,67%,62%,64%
+4,6037,LENTR02,ToFr-Albana,Oidium,22%,30%,22%,30%,39%,33%,35%
+4,6037,LENTR02,ToFr-Albana,Peronospora,78%,70%,78%,70%,61%,67%,65%
+4,6436,LENSV01,Sv-Albana,Oidium,34%,32%,43%,50%,36%,37%,42%
+4,6436,LENSV01,Sv-Albana,Peronospora,66%,68%,57%,50%,64%,63%,58%
+4,6469,LENCF01,Cf-Albana,Oidium,37%,41%,40%,50%,39%,37%,40%
+4,6469,LENCF01,Cf-Albana,Peronospora,63%,59%,60%,50%,61%,63%,60%
+4,6490,LENMER02,Mer-Albana ,Oidium,37%,34%,42%,49%,39%,41%,45%
+4,6490,LENMER02,Mer-Albana ,Peronospora,63%,66%,58%,51%,61%,59%,55%
+4,6697,LENTR03,ToFr-Casa2,Oidium,38%,42%,35%,40%,45%,28%,30%
+4,6697,LENTR03,ToFr-Casa2,Peronospora,62%,58%,65%,60%,55%,72%,70%
+40,6703,CENRB01,Rib-Terrazze,Oidium,29%,18%,17%,28%,30%,33%,30%
+40,6703,CENRB01,Rib-Terrazze,Peronospora,71%,82%,83%,72%,70%,67%,70%
+4,6866,LENCF02,CabF - Milio,Oidium,36%,32%,37%,32%,38%,23%,37%
+4,6866,LENCF02,CabF - Milio,Peronospora,64%,68%,63%,68%,62%,77%,63%
+4,6868,LENRIB01,Rib - Milio,Oidium,37%,33%,41%,34%,36%,28%,38%
+4,6868,LENRIB01,Rib - Milio,Peronospora,63%,67%,59%,66%,64%,72%,62%
+4,6895,LENSV02,Sv - Fornalis Estirpato 2016,Oidium,31%,31%,26%,23%,25%,26%,26%
+4,6895,LENSV02,Sv - Fornalis Estirpato 2016,Peronospora,69%,69%,74%,77%,75%,74%,74%
+2,6902,VIAVER01,Ver-Bosco,Oidium,23%,28%,36%,39%,35%,37%,35%
+2,6902,VIAVER01,Ver-Bosco,Peronospora,77%,72%,64%,61%,65%,63%,65%
+4,6927,GRASV01,Sv-Neblo,Oidium,37%,30%,36%,32%,27%,31%,38%
+4,6927,GRASV01,Sv-Neblo,Peronospora,63%,70%,64%,68%,73%,69%,62%
+4,7068,GRARIB01,Rib-neblo,Oidium,45%,41%,41%,37%,39%,36%,31%
+4,7068,GRARIB01,Rib-neblo,Peronospora,55%,59%,59%,63%,61%,64%,69%
+4,7069,GRATR01,ToFr-Neblo,Oidium,39%,42%,41%,30%,37%,33%,31%
+4,7069,GRATR01,ToFr-Neblo,Peronospora,61%,58%,59%,70%,63%,67%,69%
+2,7309,VIASV01,Sv-SottoCantina,Oidium,42%,43%,51%,53%,48%,49%,42%
+2,7309,VIASV01,Sv-SottoCantina,Peronospora,58%,57%,49%,47%,52%,51%,58%
+4,7310,GRARIB02,Rib-zali breg,Oidium,39%,33%,50%,56%,51%,53%,46%
+4,7310,GRARIB02,Rib-zali breg,Peronospora,61%,67%,50%,44%,49%,47%,54%
+4,7442,GRAPB01,Pb-ZaliBreg,Oidium,31%,27%,42%,34%,31%,29%,32%
+4,7442,GRAPB01,Pb-ZaliBreg,Peronospora,69%,73%,58%,66%,69%,71%,68%
+4,7457,GRAMER02,Mer-ZaliBreg,Oidium,25%,19%,20%,23%,36%,31%,35%
+4,7457,GRAMER02,Mer-ZaliBreg,Peronospora,75%,81%,80%,77%,64%,69%,65%
+40,7464,CENFR01,ToFr-Terrazze,Oidium,24%,19%,19%,33%,40%,30%,40%
+40,7464,CENFR01,ToFr-Terrazze,Peronospora,76%,81%,81%,67%,60%,70%,60%
+40,7468,CENPIG02,Pig-Ritocchino,Oidium,23%,19%,18%,24%,33%,30%,35%
+40,7468,CENPIG02,Pig-Ritocchino,Peronospora,77%,81%,82%,76%,67%,70%,65%
+4,7472,GRARIB02,Rib-ZaliBreg1,Oidium,25%,20%,19%,25%,34%,34%,36%
+4,7472,GRARIB02,Rib-ZaliBreg1,Peronospora,75%,80%,81%,75%,66%,66%,64%
+4,7866,GRASV02,Sv-Zali breg,Oidium,25%,28%,19%,32%,37%,25%,37%
+4,7866,GRASV02,Sv-Zali breg,Peronospora,75%,72%,81%,68%,63%,75%,63%
+4,7877,GRASV03,Sv-Pintar,Oidium,43%,33%,35%,27%,31%,34%,24%
+4,7877,GRASV03,Sv-Pintar,Peronospora,57%,67%,65%,73%,69%,66%,76%
+4,7882,GRAMER01,Mer-Pintar,Oidium,45%,41%,41%,37%,39%,36%,31%
+4,7882,GRAMER01,Mer-Pintar,Peronospora,55%,59%,59%,63%,61%,64%,69%
+4,7904,GRATR02,ToFr-pintar,Oidium,33%,23%,21%,36%,43%,36%,43%
+4,7904,GRATR02,ToFr-pintar,Peronospora,67%,77%,79%,64%,57%,64%,57%
+4,7972,GRAPG01,Pg-Pintar,Oidium,32%,35%,34%,35%,31%,28%,30%
+4,7972,GRAPG01,Pg-Pintar,Peronospora,68%,65%,66%,65%,69%,72%,70%
+4,8069,GRACH01,Ch-calvario,Oidium,25%,19%,20%,23%,36%,31%,35%
+4,8069,GRACH01,Ch-calvario,Peronospora,75%,81%,80%,77%,64%,69%,65%
+2,8082,VIAPG02,Pg-SottoCantina,Oidium,23%,28%,36%,38%,35%,37%,35%
+2,8082,VIAPG02,Pg-SottoCantina,Peronospora,77%,72%,64%,62%,65%,63%,65%
+4,8104,GRAMER02,Mer-Calvario,Oidium,48%,50%,51%,67%,55%,59%,56%
+4,8104,GRAMER02,Mer-Calvario,Peronospora,52%,50%,49%,33%,45%,41%,44%
+3,8173,VIAVER02,Ver-Sotto cantina,Oidium,28%,38%,51%,43%,33%,38%,41%
+3,8173,VIAVER02,Ver-Sotto cantina,Peronospora,72%,62%,49%,57%,67%,62%,59%
+4,8183,GRACAR01,Car-Calvario,Oidium,36%,38%,36%,31%,38%,31%,26%
+4,8183,GRACAR01,Car-Calvario,Peronospora,64%,62%,64%,69%,62%,69%,74%
+4,8273,GRAMAL01,Mal-Calvario,Oidium,31%,35%,39%,39%,36%,36%,39%
+4,8273,GRAMAL01,Mal-Calvario,Peronospora,69%,65%,61%,61%,64%,64%,61%
+8,8280,GRARIB03,Rib-Calvario,Oidium,45%,32%,31%,36%,30%,29%,36%
+8,8280,GRARIB03,Rib-Calvario,Peronospora,55%,68%,69%,64%,70%,71%,64%
+8,8294,GRATR02,ToFr-StefanutCasa,Oidium,36%,30%,35%,36%,42%,29%,38%
+8,8294,GRATR02,ToFr-StefanutCasa,Peronospora,64%,70%,65%,64%,58%,71%,62%
+8,8330,GRATR03,ToFr-StefanutCasa1,Oidium,30%,24%,22%,24%,35%,29%,32%
+8,8330,GRATR03,ToFr-StefanutCasa1,Peronospora,70%,76%,78%,76%,65%,71%,68%
+8,8343,GRATR04,ToFr-Mossa,Oidium,24%,33%,28%,36%,33%,33%,34%
+8,8343,GRATR04,ToFr-Mossa,Peronospora,76%,67%,72%,64%,67%,67%,66%
+8,8345,GRAMAL02,Mal- Bratinis Fornace,Oidium,33%,34%,36%,44%,36%,35%,36%
+8,8345,GRAMAL02,Mal- Bratinis Fornace,Peronospora,67%,66%,64%,56%,64%,65%,64%
+8,8356,GRACH02,Ch-Bratinis Fornace,Oidium,39%,35%,39%,42%,40%,39%,42%
+8,8356,GRACH02,Ch-Bratinis Fornace,Peronospora,61%,65%,61%,58%,60%,61%,58%
+8,8368,GRACH03,Ch-pozzar,Oidium,31%,27%,37%,43%,45%,44%,39%
+8,8368,GRACH03,Ch-pozzar,Peronospora,69%,73%,63%,57%,55%,56%,61%
+3,8392,VIAPIC02,Pic-Sotto cantina,Oidium,28%,33%,33%,31%,32%,35%,33%
+3,8392,VIAPIC02,Pic-Sotto cantina,Peronospora,72%,67%,67%,69%,68%,65%,67%
+8,8841,GRAPG02,Pg - 2016 Pozzar,Oidium,33%,28%,36%,28%,25%,24%,32%
+8,8841,GRAPG02,Pg - 2016 Pozzar,Peronospora,67%,72%,64%,72%,75%,76%,68%
+8,8849,GRAPG03,Pg-Pozzar1,Oidium,36%,28%,36%,28%,28%,25%,32%
+8,8849,GRAPG03,Pg-Pozzar1,Peronospora,64%,72%,64%,72%,72%,75%,68%
+3,8850,VIARB02,Rib-Sotto cantina,Oidium,24%,15%,25%,19%,18%,19%,21%
+3,8850,VIARB02,Rib-Sotto cantina,Peronospora,76%,85%,75%,81%,82%,81%,79%
+8,8858,GRASV02,Sv-Lesta ,Oidium,42%,36%,44%,37%,46%,38%,37%
+8,8858,GRASV02,Sv-Lesta ,Peronospora,58%,64%,56%,63%,54%,62%,63%
+8,8864,GRAMER02,Mer-Danilo,Oidium,27%,32%,33%,30%,32%,35%,32%
+8,8864,GRAMER02,Mer-Danilo,Peronospora,73%,68%,67%,70%,68%,65%,68%
+8,8876,GRAPG03,Pg-NadPalaz,Oidium,43%,44%,48%,44%,42%,40%,42%
+8,8876,GRAPG03,Pg-NadPalaz,Peronospora,57%,56%,52%,56%,58%,60%,58%
+3,9192,VIAMR01,Mer-SottoCantina,Oidium,36%,41%,45%,47%,46%,43%,40%
+3,9192,VIAMR01,Mer-SottoCantina,Peronospora,64%,59%,55%,53%,54%,57%,60%
+3,9279,VIASV02,Sv-Piazzale,Oidium,24%,22%,22%,23%,29%,33%,27%
+3,9279,VIASV02,Sv-Piazzale,Peronospora,76%,78%,78%,77%,71%,67%,73%
+8,9550,GRACH04,Ch-nad palaz,Oidium,29%,31%,34%,37%,31%,36%,33%
+8,9550,GRACH04,Ch-nad palaz,Peronospora,71%,69%,66%,63%,69%,64%,67%
+3,9606,VIASV03,Sv-SottoPiazzale alto,Oidium,35%,36%,39%,29%,34%,32%,30%
+3,9606,VIASV03,Sv-SottoPiazzale alto,Peronospora,65%,64%,61%,71%,66%,68%,70%
+8,9616,GRASV04,Sv-Pod palaz,Oidium,24%,24%,25%,23%,37%,28%,41%
+8,9616,GRASV04,Sv-Pod palaz,Peronospora,76%,76%,75%,77%,63%,72%,59%
+3,9634,VIATF02,ToFr-SottoPiazzale,Oidium,49%,56%,55%,53%,48%,55%,48%
+3,9634,VIATF02,ToFr-SottoPiazzale,Peronospora,51%,44%,45%,47%,52%,45%,52%
+8,9751,GRAPG03,Rib-Saurin,Oidium,35%,40%,32%,25%,36%,34%,34%
+8,9751,GRAPG03,Rib-Saurin,Peronospora,65%,60%,68%,75%,64%,66%,66%
+3,9815,VIASV04,Sv-SottoPiazzale,Oidium,34%,49%,52%,50%,41%,49%,46%
+3,9815,VIASV04,Sv-SottoPiazzale,Peronospora,66%,51%,48%,50%,59%,51%,54%
+8,9816,GRAPG04,Pg-Dragiza,Oidium,29%,36%,31%,20%,27%,29%,29%
+8,9816,GRAPG04,Pg-Dragiza,Peronospora,71%,64%,69%,80%,73%,71%,71%
+3,9818,VIAPG03,Pg-SottoPiazzale,Oidium,36%,31%,29%,38%,24%,28%,29%
+3,9818,VIAPG03,Pg-SottoPiazzale,Peronospora,64%,69%,71%,62%,76%,72%,71%
+10,9844,GRASV05,Rib-Dragiza,Oidium,40%,37%,41%,37%,38%,39%,40%
+10,9844,GRASV05,Rib-Dragiza,Peronospora,60%,63%,59%,63%,62%,61%,60%
+10,9845,GRAMAL01,Pg-Maura sopra Mal ,Oidium,25%,30%,30%,28%,25%,32%,25%
+10,9845,GRAMAL01,Pg-Maura sopra Mal ,Peronospora,75%,70%,70%,72%,75%,68%,75%
+10,9846,GRAPG07,Pg-Maura,Oidium,38%,37%,37%,26%,32%,29%,39%
+10,9846,GRAPG07,Pg-Maura,Peronospora,62%,63%,63%,74%,68%,71%,61%
+44,9847,ERMPINB03,Pb-Mario,Oidium,42%,48%,54%,53%,55%,52%,57%
+44,9847,ERMPINB03,Pb-Mario,Peronospora,58%,52%,46%,47%,45%,48%,43%
+10,9848,GRAPG08,Pg-Elio,Oidium,20%,28%,26%,35%,27%,27%,30%
+10,9848,GRAPG08,Pg-Elio,Peronospora,80%,72%,74%,65%,73%,73%,70%
+10,9849,GRASV07,Sv-Nad boskom,Oidium,48%,32%,30%,27%,29%,34%,26%
+10,9849,GRASV07,Sv-Nad boskom,Peronospora,52%,68%,70%,73%,71%,66%,74%
+10,9850,GRAPG09,Pg-Scedina,Oidium,13%,16%,16%,19%,17%,15%,20%
+10,9850,GRAPG09,Pg-Scedina,Peronospora,87%,84%,84%,81%,83%,85%,80%
+10,9851,GRATR05,ToFr-Grdinca,Oidium,21%,30%,30%,23%,34%,21%,34%
+10,9851,GRATR05,ToFr-Grdinca,Peronospora,79%,70%,70%,77%,66%,79%,66%
+10,9852,GRAMAL03,Mal-Grdinca,Oidium,33%,32%,33%,32%,25%,22%,20%
+10,9852,GRAMAL03,Mal-Grdinca,Peronospora,67%,68%,67%,68%,75%,78%,80%
+10,9853,GRAMER03,Mer-Grdinca,Oidium,34%,40%,36%,32%,29%,27%,33%
+10,9853,GRAMER03,Mer-Grdinca,Peronospora,66%,60%,64%,68%,71%,73%,67%
+44,9854,ERMPIC01,Pic-Mario,Oidium,43%,43%,44%,48%,48%,50%,55%
+44,9854,ERMPIC01,Pic-Mario,Peronospora,57%,57%,56%,52%,52%,50%,45%
+45,9855,ERMCABS08,Csv-Mario,Oidium,43%,49%,53%,54%,59%,57%,59%
+45,9855,ERMCABS08,Csv-Mario,Peronospora,57%,51%,47%,46%,41%,43%,41%
+10,9856,STUCH01,Ch-nuova,Oidium,45%,42%,44%,46%,42%,46%,47%
+10,9856,STUCH01,Ch-nuova,Peronospora,55%,58%,56%,54%,58%,54%,53%
+10,9857,STUCSV01,Csv-Russiz,Oidium,47%,45%,45%,29%,42%,30%,45%
+10,9857,STUCSV01,Csv-Russiz,Peronospora,53%,55%,55%,71%,58%,70%,55%
+10,9858,STURIB01,Rib - Russiz Bosco,Oidium,16%,18%,15%,13%,20%,34%,42%
+10,9858,STURIB01,Rib - Russiz Bosco,Peronospora,84%,82%,85%,87%,80%,66%,58%
+3,9860,VIAREF01,Ref-SottoPiazzale,Oidium,61%,60%,61%,63%,62%,67%,63%
+3,9860,VIAREF01,Ref-SottoPiazzale,Peronospora,39%,40%,39%,37%,38%,33%,37%
+-1,9861,VDC,>> Vigneto da codificare,Oidium,58%,62%,59%,57%,66%,60%,56%
+-1,9861,VDC,>> Vigneto da codificare,Peronospora,42%,38%,41%,43%,34%,40%,44%
+10,9862,STUCF01,Cf-Russiz,Oidium,61%,55%,55%,50%,55%,55%,56%
+10,9862,STUCF01,Cf-Russiz,Peronospora,39%,45%,45%,50%,45%,45%,44%
+10,9863,STUTRA01,Tra - Russiz,Oidium,43%,38%,43%,44%,42%,45%,49%
+10,9863,STUTRA01,Tra - Russiz,Peronospora,57%,62%,57%,56%,58%,55%,51%
+10,9864,STUCAR01,Car-Russiz,Oidium,23%,31%,24%,33%,38%,24%,33%
+10,9864,STUCAR01,Car-Russiz,Peronospora,77%,69%,76%,67%,62%,76%,67%
+3,9911,VIAPG04,Pg-SottoPiazzale,Oidium,31%,31%,33%,21%,31%,25%,28%
+3,9911,VIAPG04,Pg-SottoPiazzale,Peronospora,69%,69%,67%,79%,69%,75%,72%
+10,9915,STUPG02,Pg - Russiz,Oidium,43%,42%,36%,45%,39%,39%,33%
+10,9915,STUPG02,Pg - Russiz,Peronospora,57%,58%,64%,55%,61%,61%,67%
+10,9942,STUSV01,Sv-Russiz,Oidium,29%,29%,26%,31%,38%,35%,40%
+10,9942,STUSV01,Sv-Russiz,Peronospora,71%,71%,74%,69%,62%,65%,60%
+10,9945,STUPG03,Pg - Russiz Bosco,Oidium,30%,32%,27%,15%,23%,27%,27%
+10,9945,STUPG03,Pg - Russiz Bosco,Peronospora,70%,68%,73%,85%,77%,73%,73%
+10,9946,STUSV02,Sv - Russiz Pioppi na,Oidium,41%,31%,36%,31%,31%,34%,24%
+10,9946,STUSV02,Sv - Russiz Pioppi na,Peronospora,59%,69%,64%,69%,69%,66%,76%
+10,9947,STUPG02,Pg-Oblim,Oidium,35%,26%,37%,27%,25%,26%,21%
+10,9947,STUPG02,Pg-Oblim,Peronospora,65%,74%,63%,73%,75%,74%,79%
+10,9949,STUCH02,Ch-campolungo,Oidium,26%,29%,29%,16%,24%,21%,20%
+10,9949,STUCH02,Ch-campolungo,Peronospora,74%,71%,71%,84%,76%,79%,80%
+10,9950,STUSV03,Sv-Campolungo,Oidium,28%,22%,23%,24%,35%,24%,32%
+10,9950,STUSV03,Sv-Campolungo,Peronospora,72%,78%,77%,76%,65%,76%,68%
+10,9951,STUTR01,ToFr-Skoncevo,Oidium,30%,31%,33%,37%,30%,26%,24%
+10,9951,STUTR01,ToFr-Skoncevo,Peronospora,70%,69%,67%,63%,70%,74%,76%
+10,9952,STUPG04,Pg-ColleDuga,Oidium,35%,37%,35%,27%,32%,30%,40%
+10,9952,STUPG04,Pg-ColleDuga,Peronospora,65%,63%,65%,73%,68%,70%,60%
+10,9953,STUMR02,Mer-Casarsa,Oidium,23%,25%,25%,23%,27%,14%,26%
+10,9953,STUMR02,Mer-Casarsa,Peronospora,77%,75%,75%,77%,73%,86%,74%
+10,9954,STUREF01,Ref-Casarsa,Oidium,16%,19%,14%,18%,14%,12%,22%
+10,9954,STUREF01,Ref-Casarsa,Peronospora,84%,81%,86%,82%,86%,88%,78%
+10,9955,STUMR01,Mer-Casa,Oidium,28%,29%,34%,34%,37%,35%,34%
+10,9955,STUMR01,Mer-Casa,Peronospora,72%,71%,66%,66%,63%,65%,66%
+10,9956,STUPET01,PetV-Casa,Oidium,32%,37%,32%,30%,29%,27%,20%
+10,9956,STUPET01,PetV-Casa,Peronospora,68%,63%,68%,70%,71%,73%,80%
+10,9957,STUSV04,Sv-Casa5,Oidium,40%,36%,40%,34%,35%,39%,40%
+10,9957,STUSV04,Sv-Casa5,Peronospora,60%,64%,60%,66%,65%,61%,60%
+10,9958,MAGSV05,Sv-5,Oidium,24%,28%,31%,27%,33%,32%,28%
+10,9958,MAGSV05,Sv-5,Peronospora,76%,72%,69%,73%,67%,68%,72%
+10,9959,MAGGLE13,Glera-13,Oidium,28%,35%,31%,21%,27%,26%,29%
+10,9959,MAGGLE13,Glera-13,Peronospora,72%,65%,69%,79%,73%,74%,71%
+10,9962,MAGGLE13,Glera-13_1,Oidium,45%,37%,32%,26%,28%,38%,25%
+10,9962,MAGGLE13,Glera-13_1,Peronospora,55%,63%,68%,74%,72%,62%,75%
+10,9964,MAGMER11,Mer-11,Oidium,36%,34%,31%,38%,32%,37%,32%
+10,9964,MAGMER11,Mer-11,Peronospora,64%,66%,69%,62%,68%,63%,68%
+10,9965,MAGGLE14,Glera-14,Oidium,32%,31%,30%,38%,27%,24%,23%
+10,9965,MAGGLE14,Glera-14,Peronospora,68%,69%,70%,62%,73%,76%,77%
+10,9968,MAGPG03,Pg-3,Oidium,31%,40%,35%,31%,28%,27%,34%
+10,9968,MAGPG03,Pg-3,Peronospora,69%,60%,65%,69%,72%,73%,66%
+10,9970,MAGSV05,Sv-5,Oidium,10%,18%,17%,13%,19%,19%,17%
+10,9970,MAGSV05,Sv-5,Peronospora,90%,82%,83%,87%,81%,81%,83%
+10,9971,MAGFR08,ToFr-8,Oidium,30%,28%,38%,26%,35%,25%,38%
+10,9971,MAGFR08,ToFr-8,Peronospora,70%,72%,62%,74%,65%,75%,62%
+10,9978,MAGVER09,Verduzzo,Oidium,45%,37%,32%,26%,28%,38%,25%
+10,9978,MAGVER09,Verduzzo,Peronospora,55%,63%,68%,74%,72%,62%,75%
+10,9980,MAGPG01,Pg-1,Oidium,32%,38%,33%,33%,32%,28%,34%
+10,9980,MAGPG01,Pg-1,Peronospora,68%,62%,67%,67%,68%,72%,66%
+10,9981,MAGPG02,Pg-2,Oidium,31%,34%,29%,17%,23%,24%,24%
+10,9981,MAGPG02,Pg-2,Peronospora,69%,66%,71%,83%,77%,76%,76%
+10,9983,MAGTR07,Tra-7,Oidium,32%,34%,30%,14%,23%,19%,27%
+10,9983,MAGTR07,Tra-7,Peronospora,68%,66%,70%,86%,77%,81%,73%
+10,9986,MAGSV06,Sv-6,Oidium,24%,22%,31%,25%,32%,16%,26%
+10,9986,MAGSV06,Sv-6,Peronospora,76%,78%,69%,75%,68%,84%,74%
+10,9987,MAGCH10,Ch-10,Oidium,22%,29%,26%,32%,38%,22%,32%
+10,9987,MAGCH10,Ch-10,Peronospora,78%,71%,74%,68%,62%,78%,68%
+10,9990,MAGCF12,Cf-12,Oidium,54%,45%,42%,44%,46%,47%,55%
+10,9990,MAGCF12,Cf-12,Peronospora,46%,55%,58%,56%,54%,53%,45%
+10,9992,MAGSV04,Sv-4,Oidium,33%,39%,37%,31%,37%,31%,33%
+10,9992,MAGSV04,Sv-4,Peronospora,67%,61%,63%,69%,63%,69%,67%
+10,9993,VISTMER01,Mer-Colombera,Oidium,36%,30%,33%,34%,39%,32%,36%
+10,9993,VISTMER01,Mer-Colombera,Peronospora,64%,70%,67%,66%,61%,68%,64%
+10,9994,VISTREB01,Rebo-2005,Oidium,35%,36%,24%,33%,25%,26%,28%
+10,9994,VISTREB01,Rebo-2005,Peronospora,65%,64%,76%,67%,75%,74%,72%
+10,9996,VISTRDPR01,RefDPR-2005,Oidium,41%,31%,36%,31%,31%,33%,23%
+10,9996,VISTRDPR01,RefDPR-2005,Peronospora,59%,69%,64%,69%,69%,67%,77%
+10,9997,VISTR01,ToFr-2005,Oidium,47%,31%,32%,27%,31%,35%,27%
+10,9997,VISTR01,ToFr-2005,Peronospora,53%,69%,68%,73%,69%,65%,73%
+11,9998,VISTMER01,Mer-1991,Oidium,46%,32%,30%,28%,26%,32%,26%
+11,9998,VISTMER01,Mer-1991,Peronospora,54%,68%,70%,72%,74%,68%,74%
+11,10000,VISTGLE01,Glera-Glera,Oidium,14%,20%,22%,24%,14%,15%,24%
+11,10000,VISTGLE01,Glera-Glera,Peronospora,86%,80%,78%,76%,86%,85%,76%
+11,10003,VISTMER02,Mer-1996,Oidium,36%,33%,33%,31%,23%,28%,27%
+11,10003,VISTMER02,Mer-1996,Peronospora,64%,67%,67%,69%,77%,72%,73%
+11,10005,VISTCF01,Cf-2001_sud,Oidium,39%,37%,37%,30%,30%,29%,29%
+11,10005,VISTCF01,Cf-2001_sud,Peronospora,61%,63%,63%,70%,70%,71%,71%
+11,10007,VISTMER03,Mer-2001_nord,Oidium,27%,34%,21%,38%,20%,32%,24%
+11,10007,VISTMER03,Mer-2001_nord,Peronospora,73%,66%,79%,62%,80%,68%,76%
+11,10009,VISTMER04,Mer-2000_sud,Oidium,34%,36%,24%,35%,27%,28%,28%
+11,10009,VISTMER04,Mer-2000_sud,Peronospora,66%,64%,76%,65%,73%,72%,72%
+11,10010,VISTMER05,Mer-2000_nord,Oidium,28%,24%,33%,35%,29%,32%,26%
+11,10010,VISTMER05,Mer-2000_nord,Peronospora,72%,76%,67%,65%,71%,68%,74%
+11,10012,VISTMER06,Mer1999_sud            ,Oidium,17%,19%,24%,22%,30%,25%,25%
+11,10012,VISTMER06,Mer1999_sud            ,Peronospora,83%,81%,76%,78%,70%,75%,75%
+11,10013,VISTMER07,Mer-1999 nord                 ,Oidium,32%,34%,32%,17%,24%,21%,24%
+11,10013,VISTMER07,Mer-1999 nord                 ,Peronospora,68%,66%,68%,83%,76%,79%,76%
+11,10017,VISTMER08,Mer- 1998_SUD,Oidium,38%,33%,34%,26%,28%,26%,33%
+11,10017,VISTMER08,Mer- 1998_SUD,Peronospora,62%,67%,66%,74%,72%,74%,67%
+11,10018,VISTMER09,Mer-1998_nord         ,Oidium,19%,24%,19%,16%,22%,17%,32%
+11,10018,VISTMER09,Mer-1998_nord         ,Peronospora,81%,76%,81%,84%,78%,83%,68%
+11,10032,VISTMER10,Mer-1997_B_Sud,Oidium,30%,27%,39%,37%,37%,33%,35%
+11,10032,VISTMER10,Mer-1997_B_Sud,Peronospora,70%,73%,61%,63%,63%,67%,65%
+11,10043,VISTMER11,Mer 1997_B_Nord    ,Oidium,27%,32%,28%,38%,42%,27%,35%
+11,10043,VISTMER11,Mer 1997_B_Nord    ,Peronospora,73%,68%,72%,62%,58%,73%,65%
+11,10052,VISTMER12,Mer_1997_A_sud,Oidium,32%,31%,25%,35%,33%,25%,30%
+11,10052,VISTMER12,Mer_1997_A_sud,Peronospora,68%,69%,75%,65%,67%,75%,70%
+45,10058,ERMREF01,Ref-Mario,Oidium,36%,30%,32%,35%,30%,41%,52%
+45,10058,ERMREF01,Ref-Mario,Peronospora,64%,70%,68%,65%,70%,59%,48%
+3,10063,VIACH01,Ch-Judrio,Oidium,18%,29%,34%,39%,40%,37%,35%
+3,10063,VIACH01,Ch-Judrio,Peronospora,82%,71%,66%,61%,60%,63%,65%
+11,10077,VISTMER13,Mer_1997_A_nord,Oidium,49%,45%,48%,51%,50%,40%,35%
+11,10077,VISTMER13,Mer_1997_A_nord,Peronospora,51%,55%,52%,49%,50%,60%,65%
+3,10182,VIAIM01,IncM-Judrio,Oidium,24%,29%,38%,33%,37%,35%,29%
+3,10182,VIAIM01,IncM-Judrio,Peronospora,76%,71%,62%,67%,63%,65%,71%
+3,10202,VIASCH01,Sch-Judrio,Oidium,33%,30%,28%,33%,39%,26%,31%
+3,10202,VIASCH01,Sch-Judrio,Peronospora,67%,70%,72%,67%,61%,74%,69%
+3,10223,VIAPIG01,Pig-Collina Alta,Oidium,32%,23%,22%,29%,39%,35%,34%
+3,10223,VIAPIG01,Pig-Collina Alta,Peronospora,68%,77%,78%,71%,61%,65%,66%
+11,10254,VISTANC02,ancellotta-2003,Oidium,31%,34%,41%,28%,25%,33%,24%
+11,10254,VISTANC02,ancellotta-2003,Peronospora,69%,66%,59%,72%,75%,67%,76%
+11,10255,VISCF02,Cf-2003,Oidium,35%,43%,55%,40%,33%,39%,41%
+11,10255,VISCF02,Cf-2003,Peronospora,65%,57%,45%,60%,67%,61%,59%
+11,10256,VISTRDPR02,Ref DPR-2003,Oidium,67%,70%,68%,65%,58%,60%,58%
+11,10256,VISTRDPR02,Ref DPR-2003,Peronospora,33%,30%,32%,35%,42%,40%,42%
+11,10257,VISTMER14,Mer-Ridiel,Oidium,40%,52%,50%,50%,41%,47%,55%
+11,10257,VISTMER14,Mer-Ridiel,Peronospora,60%,48%,50%,50%,59%,53%,45%
+11,10258,VISTTR02,ToFr-Tocai,Oidium,33%,25%,31%,31%,36%,31%,28%
+11,10258,VISTTR02,ToFr-Tocai,Peronospora,67%,75%,69%,69%,64%,69%,72%
+11,10259,PUISV01,Sau - Nuovo Romans,Oidium,31%,42%,46%,41%,34%,41%,42%
+11,10259,PUISV01,Sau - Nuovo Romans,Peronospora,69%,58%,54%,59%,66%,59%,58%
+11,10260,PUIPG02,Pg - Pali Cemento Romans,Oidium,39%,34%,42%,42%,40%,35%,40%
+11,10260,PUIPG02,Pg - Pali Cemento Romans,Peronospora,61%,66%,58%,58%,60%,65%,60%
+12,10261,PUIPN01,Pn - Vecchio Romans,Oidium,38%,37%,32%,42%,40%,23%,43%
+12,10261,PUIPN01,Pn - Vecchio Romans,Peronospora,62%,63%,68%,58%,60%,77%,57%
+12,10263,PUIPN03,Pn - Giovane Romans,Oidium,39%,41%,43%,36%,46%,46%,23%
+12,10263,PUIPN03,Pn - Giovane Romans,Peronospora,61%,59%,57%,64%,54%,54%,77%
+12,10264,PUIPG07,Pg-24File,Oidium,30%,45%,51%,42%,33%,41%,35%
+12,10264,PUIPG07,Pg-24File,Peronospora,70%,55%,49%,58%,67%,59%,65%
+12,10265,PUIPG09,Pg-30File,Oidium,30%,37%,36%,44%,33%,35%,43%
+12,10265,PUIPG09,Pg-30File,Peronospora,70%,63%,64%,56%,67%,65%,57%
+12,10266,PUICH02,Cha - Vecchio Romans,Oidium,30%,36%,35%,35%,34%,35%,42%
+12,10266,PUICH02,Cha - Vecchio Romans,Peronospora,70%,64%,65%,65%,66%,65%,58%
+12,10267,PUISV02,Sau - Vecchio Romans,Oidium,23%,24%,23%,23%,26%,29%,32%
+12,10267,PUISV02,Sau - Vecchio Romans,Peronospora,77%,76%,77%,77%,74%,71%,68%
+12,10268,PUITR01,TraAro-Romans,Oidium,32%,37%,37%,39%,42%,36%,30%
+12,10268,PUITR01,TraAro-Romans,Peronospora,68%,63%,63%,61%,58%,64%,70%
+12,10269,PUICH03,Cha - 2 ha Romans,Oidium,33%,39%,51%,53%,39%,41%,42%
+12,10269,PUICH03,Cha - 2 ha Romans,Peronospora,67%,61%,49%,47%,61%,59%,58%
+12,10270,PUITC03,ToFr - 2 ha Romans,Oidium,43%,45%,46%,46%,50%,48%,42%
+12,10270,PUITC03,ToFr - 2 ha Romans,Peronospora,57%,55%,54%,54%,50%,52%,58%
+12,10271,PUIPG10,Pg-22File,Oidium,38%,41%,39%,39%,38%,39%,31%
+12,10271,PUIPG10,Pg-22File,Peronospora,62%,59%,61%,61%,62%,61%,69%
+12,10272,PUIPG11,Pg-39File,Oidium,21%,33%,26%,26%,30%,29%,31%
+12,10272,PUIPG11,Pg-39File,Peronospora,79%,67%,74%,74%,70%,71%,69%
+12,10273,PUICH04,Cha - Nuovo Romans,Oidium,39%,41%,37%,36%,36%,38%,31%
+12,10273,PUICH04,Cha - Nuovo Romans,Peronospora,61%,59%,63%,64%,64%,62%,69%
+12,10274,PUITC04,ToFr - Nuovo Romans,Oidium,35%,32%,36%,43%,37%,37%,34%
+12,10274,PUITC04,ToFr - Nuovo Romans,Peronospora,65%,68%,64%,57%,63%,63%,66%
+12,10275,PUIRB02,RibRomans,Oidium,41%,32%,40%,36%,31%,37%,35%
+12,10275,PUIRB02,RibRomans,Peronospora,59%,68%,60%,64%,69%,63%,65%
+12,10276,GIGSV01,Sv-Rovere,Oidium,18%,25%,17%,20%,16%,15%,38%
+12,10276,GIGSV01,Sv-Rovere,Peronospora,82%,75%,83%,80%,84%,85%,62%
+12,10277,GIGCABF03,Cf-Rovere,Oidium,38%,28%,26%,27%,17%,22%,33%
+12,10277,GIGCABF03,Cf-Rovere,Peronospora,62%,72%,74%,73%,83%,78%,67%
+13,10278,GIGSV02,Sv-Magnan,Oidium,36%,36%,37%,28%,32%,27%,32%
+13,10278,GIGSV02,Sv-Magnan,Peronospora,64%,64%,63%,72%,68%,73%,68%
+40,10279,CENMR02,Mer-Ritocchino,Oidium,66%,71%,68%,64%,69%,71%,64%
+40,10279,CENMR02,Mer-Ritocchino,Peronospora,34%,29%,32%,36%,31%,29%,36%
+40,10280,CENSCH02,Sch-Ritocchino,Oidium,52%,63%,68%,73%,67%,62%,67%
+40,10280,CENSCH02,Sch-Ritocchino,Peronospora,48%,37%,32%,27%,33%,38%,33%
+13,10281,GIGCABF02,Cf-Magnan1,Oidium,30%,35%,33%,34%,35%,34%,34%
+13,10281,GIGCABF02,Cf-Magnan1,Peronospora,70%,65%,67%,66%,65%,66%,66%
+13,10282,GIGPING01,Pg-Magnan,Oidium,21%,17%,15%,12%,12%,20%,28%
+13,10282,GIGPING01,Pg-Magnan,Peronospora,79%,83%,85%,88%,88%,80%,72%
+13,10283,GIGSV03,Sv-Sottostrada,Oidium,21%,12%,13%,10%,12%,17%,29%
+13,10283,GIGSV03,Sv-Sottostrada,Peronospora,79%,88%,87%,90%,88%,83%,71%
+13,10284,GIGPING01,Pg-Sottostrada,Oidium,15%,8%,8%,8%,8%,14%,21%
+13,10284,GIGPING01,Pg-Sottostrada,Peronospora,85%,92%,92%,92%,92%,86%,79%
+13,10285,GIGMER04,Mer-Sottostrada,Oidium,23%,17%,17%,20%,14%,21%,20%
+13,10285,GIGMER04,Mer-Sottostrada,Peronospora,77%,83%,83%,80%,86%,79%,80%
+40,10286,CENRF02,Ref-Ritocchino,Oidium,61%,67%,65%,70%,70%,69%,74%
+40,10286,CENRF02,Ref-Ritocchino,Peronospora,39%,33%,35%,30%,30%,31%,26%
+13,10287,GIGFRI05,ToFr-Sottostrada,Oidium,24%,24%,25%,25%,42%,36%,38%
+13,10287,GIGFRI05,ToFr-Sottostrada,Peronospora,76%,76%,75%,75%,58%,64%,62%
+13,10288,GIGCHA01,Ch-Quadrel,Oidium,37%,37%,26%,32%,44%,41%,47%
+13,10288,GIGCHA01,Ch-Quadrel,Peronospora,63%,63%,74%,68%,56%,59%,53%
+13,10289,GIGCHA02,Ch-Diga,Oidium,29%,23%,18%,28%,37%,33%,36%
+13,10289,GIGCHA02,Ch-Diga,Peronospora,71%,77%,82%,72%,63%,67%,64%
+13,10290,GIGREF01,Ref-Diga,Oidium,33%,25%,20%,33%,41%,34%,48%
+13,10290,GIGREF01,Ref-Diga,Peronospora,67%,75%,80%,67%,59%,66%,52%
+3,10297,VIATAZ01,Taz-Judrio,Oidium,37%,45%,45%,44%,38%,42%,53%
+3,10297,VIATAZ01,Taz-Judrio,Peronospora,63%,55%,55%,56%,62%,58%,47%
+3,11290,VIAOSE01,Ose-Judrio,Oidium,41%,35%,36%,32%,39%,35%,33%
+3,11290,VIAOSE01,Ose-Judrio,Peronospora,59%,65%,64%,68%,61%,65%,67%
+3,11316,VIAMR02,Mer-Judrio,Oidium,38%,37%,38%,31%,40%,37%,34%
+3,11316,VIAMR02,Mer-Judrio,Peronospora,62%,63%,62%,69%,60%,63%,66%
+3,11489,VIACF01,Cf-Judrio,Oidium,31%,24%,35%,40%,44%,42%,37%
+3,11489,VIACF01,Cf-Judrio,Peronospora,69%,76%,65%,60%,56%,58%,63%
+3,11492,VIACSV01,Csv-Judrio,Oidium,31%,24%,35%,40%,44%,42%,37%
+3,11492,VIACSV01,Csv-Judrio,Peronospora,69%,76%,65%,60%,56%,58%,63%
+3,11505,VIACB01,Cabernet-Judrio,Oidium,39%,43%,40%,34%,37%,34%,40%
+3,11505,VIACB01,Cabernet-Judrio,Peronospora,61%,57%,60%,66%,63%,66%,60%
+3,11506,BGTPG01,Pg-SanQuirino,Oidium,40%,39%,41%,36%,33%,36%,35%
+3,11506,BGTPG01,Pg-SanQuirino,Peronospora,60%,61%,59%,64%,67%,64%,65%
+3,11511,BGTRB01,RibG-Pradis,Oidium,35%,31%,33%,33%,30%,28%,30%
+3,11511,BGTRB01,RibG-Pradis,Peronospora,65%,69%,67%,67%,70%,72%,70%
+3,11561,BGTTC02,ToFr-Preval,Oidium,28%,33%,33%,31%,32%,35%,33%
+3,11561,BGTTC02,ToFr-Preval,Peronospora,72%,67%,67%,69%,68%,65%,67%
+3,11583,SRESV03,Sau - Broili MolinNuovo,Oidium,37%,35%,33%,27%,36%,22%,26%
+3,11583,SRESV03,Sau - Broili MolinNuovo,Peronospora,63%,65%,67%,73%,64%,78%,74%
+13,11645,GIGSV04,Sv-Diga,Oidium,40%,42%,41%,30%,37%,33%,31%
+13,11645,GIGSV04,Sv-Diga,Peronospora,60%,58%,59%,70%,63%,67%,69%
+3,11711,SREPG02,Pg - Broili MolinNuovo ,Oidium,29%,23%,22%,34%,37%,31%,31%
+3,11711,SREPG02,Pg - Broili MolinNuovo ,Peronospora,71%,77%,78%,66%,63%,69%,69%
+3,11731,SRECH04,Cha - MolinNuovo,Oidium,37%,35%,33%,27%,36%,21%,26%
+3,11731,SRECH04,Cha - MolinNuovo,Peronospora,63%,65%,67%,73%,64%,79%,74%
+3,11816,SREMT03,Mer - Vecchio MolinNuovo,Oidium,40%,49%,50%,46%,40%,47%,53%
+3,11816,SREMT03,Mer - Vecchio MolinNuovo,Peronospora,60%,51%,50%,54%,60%,53%,47%
+13,11819,GIGSCH01,Sch-Luciano,Oidium,31%,30%,26%,25%,30%,29%,29%
+13,11819,GIGSCH01,Sch-Luciano,Peronospora,69%,70%,74%,75%,70%,71%,71%
+3,11874,SRECAR03,Car - Keber MolinNuovo,Oidium,32%,25%,22%,30%,31%,29%,33%
+3,11874,SRECAR03,Car - Keber MolinNuovo,Peronospora,68%,75%,78%,70%,69%,71%,67%
+3,11894,SREVER03,Ver - MolinNuovo ,Oidium,32%,24%,23%,27%,33%,29%,35%
+3,11894,SREVER03,Ver - MolinNuovo ,Peronospora,68%,76%,77%,73%,67%,71%,65%
+40,11948,CENPN01,Pn-Piano,Oidium,40%,47%,42%,43%,39%,38%,36%
+40,11948,CENPN01,Pn-Piano,Peronospora,60%,53%,58%,57%,61%,62%,64%
+3,11968,SRETO02,ToFr-Gorga,Oidium,20%,23%,23%,27%,40%,31%,43%
+3,11968,SRETO02,ToFr-Gorga,Peronospora,80%,77%,77%,73%,60%,69%,57%
+3,12006,SRESV01,Sv-Gorga,Oidium,25%,25%,22%,26%,32%,24%,30%
+3,12006,SRESV01,Sv-Gorga,Peronospora,75%,75%,78%,74%,68%,76%,70%
+5,12026,SREMAL01,Mal-Licinio,Oidium,25%,25%,22%,26%,32%,26%,30%
+5,12026,SREMAL01,Mal-Licinio,Peronospora,75%,75%,78%,74%,68%,74%,70%
+13,12288,GIGFRI01,ToFr-Ciliegi,Oidium,47%,50%,51%,46%,43%,49%,43%
+13,12288,GIGFRI01,ToFr-Ciliegi,Peronospora,53%,50%,49%,54%,57%,51%,57%
+5,12338,SRETO01,ToFr-Licinio,Oidium,22%,24%,27%,37%,35%,39%,35%
+5,12338,SRETO01,ToFr-Licinio,Peronospora,78%,76%,73%,63%,65%,61%,65%
+5,12373,TIARIBG01,RibG-piscina,Oidium,21%,20%,28%,33%,35%,38%,37%
+5,12373,TIARIBG01,RibG-piscina,Peronospora,79%,80%,72%,67%,65%,62%,63%
+5,12526,TIASV01,Sv-Piscina,Oidium,31%,37%,38%,40%,40%,37%,29%
+5,12526,TIASV01,Sv-Piscina,Peronospora,69%,63%,62%,60%,60%,63%,71%
+40,12528,CENSV01,Sv-Piano,Oidium,23%,26%,34%,34%,25%,27%,24%
+40,12528,CENSV01,Sv-Piano,Peronospora,77%,74%,66%,66%,75%,73%,76%
+5,12532,TIASV02,Sv-Reka,Oidium,32%,38%,37%,39%,42%,39%,30%
+5,12532,TIASV02,Sv-Reka,Peronospora,68%,62%,63%,61%,58%,61%,70%
+13,12535,GIGPIG01,Pig-Soprastrada,Oidium,56%,52%,56%,50%,51%,44%,45%
+13,12535,GIGPIG01,Pig-Soprastrada,Peronospora,44%,48%,44%,50%,49%,56%,55%
+5,12539,TIARIBG02,RibG-Judrio,Oidium,30%,36%,35%,33%,34%,35%,42%
+5,12539,TIARIBG02,RibG-Judrio,Peronospora,70%,64%,65%,67%,66%,65%,58%
+5,12541,TIASCH01,Sch-Judrio sovrainnestato nel 2016,Oidium,30%,36%,35%,33%,34%,35%,42%
+5,12541,TIASCH01,Sch-Judrio sovrainnestato nel 2016,Peronospora,70%,64%,65%,67%,66%,65%,58%
+40,12580,CENSC01,Sch-Piano,Oidium,38%,29%,24%,34%,37%,38%,39%
+40,12580,CENSC01,Sch-Piano,Peronospora,62%,71%,76%,66%,63%,62%,61%
+5,12636,TIASV02,Sv-Bosco1,Oidium,25%,24%,25%,27%,33%,33%,33%
+5,12636,TIASV02,Sv-Bosco1,Peronospora,75%,76%,75%,73%,67%,67%,67%
+13,12707,GIGMER02,Mer-Riserva,Oidium,30%,29%,26%,26%,37%,31%,35%
+13,12707,GIGMER02,Mer-Riserva,Peronospora,70%,71%,74%,74%,63%,69%,65%
+40,12708,CENCS01,Csv-Piano,Oidium,31%,30%,26%,26%,30%,29%,29%
+40,12708,CENCS01,Csv-Piano,Peronospora,69%,70%,74%,74%,70%,71%,71%
+5,12718,TIASV03,Sau - Agrisosta,Oidium,42%,33%,36%,28%,32%,36%,30%
+5,12718,TIASV03,Sau - Agrisosta,Peronospora,58%,67%,64%,72%,68%,64%,70%
+13,12888,GIGFRI03,ToFr-Storico,Oidium,34%,42%,47%,39%,36%,40%,48%
+13,12888,GIGFRI03,ToFr-Storico,Peronospora,66%,58%,53%,61%,64%,60%,52%
+13,12927,GIGSCH04,Sch-Storico,Oidium,25%,23%,17%,26%,37%,35%,32%
+13,12927,GIGSCH04,Sch-Storico,Peronospora,75%,77%,83%,74%,63%,65%,68%
+5,12969,TIACAR01,Car - Moraro,Oidium,34%,30%,29%,35%,29%,26%,31%
+5,12969,TIACAR01,Car - Moraro,Peronospora,66%,70%,71%,65%,71%,74%,69%
+5,13046,TIACSV01,CabSau - Moraro,Oidium,33%,28%,38%,33%,35%,25%,41%
+5,13046,TIACSV01,CabSau - Moraro,Peronospora,67%,72%,62%,67%,65%,75%,59%
+5,13064,VRSMER06,Mer - Cantina Giasbana,Oidium,31%,30%,41%,33%,26%,28%,30%
+5,13064,VRSMER06,Mer - Cantina Giasbana,Peronospora,69%,70%,59%,67%,74%,72%,70%
+7,13067,VRSPB01,Pb - Giasbana,Oidium,34%,31%,43%,32%,24%,32%,32%
+7,13067,VRSPB01,Pb - Giasbana,Peronospora,66%,69%,57%,68%,76%,68%,68%
+7,13069,VRSPG05,Pg - Silvoz Mossa,Oidium,35%,35%,44%,37%,31%,37%,31%
+7,13069,VRSPG05,Pg - Silvoz Mossa,Peronospora,65%,65%,56%,63%,69%,63%,69%
+7,13092,VRSCHA06,Pg - Gradisciutta Giasbana,Oidium,32%,40%,39%,28%,32%,32%,30%
+7,13092,VRSCHA06,Pg - Gradisciutta Giasbana,Peronospora,68%,60%,61%,72%,68%,68%,70%
+7,13097,VRSCHA03,Cha - Collina Basso Giasbana,Oidium,31%,28%,37%,38%,39%,30%,37%
+7,13097,VRSCHA03,Cha - Collina Basso Giasbana,Peronospora,69%,72%,63%,62%,61%,70%,63%
+7,13102,VRSSV07,Sau - Collina Giasbana,Oidium,30%,24%,18%,29%,39%,39%,40%
+7,13102,VRSSV07,Sau - Collina Giasbana,Peronospora,70%,76%,82%,71%,61%,61%,60%
+7,13108,VRSPG07,Pg - Nuovo Capannone Mossa,Oidium,27%,25%,31%,35%,25%,30%,31%
+7,13108,VRSPG07,Pg - Nuovo Capannone Mossa,Peronospora,73%,75%,69%,65%,75%,70%,69%
+7,13125,VRSMER01,Pg - Pezzo Grande Mossa,Oidium,29%,25%,22%,28%,38%,35%,39%
+7,13125,VRSMER01,Pg - Pezzo Grande Mossa,Peronospora,71%,75%,78%,72%,62%,65%,61%
+40,13136,CENCF01,Cf-Piano,Oidium,27%,22%,17%,26%,35%,31%,33%
+40,13136,CENCF01,Cf-Piano,Peronospora,73%,78%,83%,74%,65%,69%,67%
+40,13154,CENSV02,Sv-Piano1,Oidium,27%,21%,18%,26%,35%,31%,33%
+40,13154,CENSV02,Sv-Piano1,Peronospora,73%,79%,82%,74%,65%,69%,67%
+7,13161,VRSPG02,Sau - Pezzo Grande Mossa,Oidium,29%,24%,20%,27%,37%,32%,35%
+7,13161,VRSPG02,Sau - Pezzo Grande Mossa,Peronospora,71%,76%,80%,73%,63%,68%,65%
+40,13162,CENIM01,IncM-Piano,Oidium,27%,21%,18%,26%,35%,31%,33%
+40,13162,CENIM01,IncM-Piano,Peronospora,73%,79%,82%,74%,65%,69%,67%
+7,13180,VRSMR02,Mer - Mossa,Oidium,32%,30%,42%,32%,26%,28%,30%
+7,13180,VRSMR02,Mer - Mossa,Peronospora,68%,70%,58%,68%,74%,72%,70%
+7,13205,VRSPG01,Pg - Mossa,Oidium,34%,32%,43%,32%,24%,31%,31%
+7,13205,VRSPG01,Pg - Mossa,Peronospora,66%,68%,57%,68%,76%,69%,69%
+7,13220,VRSMR03,Mer - Vecchio Mossa,Oidium,34%,31%,43%,32%,24%,31%,31%
+7,13220,VRSMR03,Mer - Vecchio Mossa,Peronospora,66%,69%,57%,68%,76%,69%,69%
+7,13228,VRSCHA01,Cha - Vecchio Mossa,Oidium,34%,31%,43%,32%,24%,32%,31%
+7,13228,VRSCHA01,Cha - Vecchio Mossa,Peronospora,66%,69%,57%,68%,76%,68%,69%
+7,13246,VRSCS01,CabSau - Mossa,Oidium,29%,29%,38%,36%,36%,36%,33%
+7,13246,VRSCS01,CabSau - Mossa,Peronospora,71%,71%,62%,64%,64%,64%,67%
+7,13254,VRSRF01,Ref - Mossa 01,Oidium,43%,45%,39%,32%,46%,45%,48%
+7,13254,VRSRF01,Ref - Mossa 01,Peronospora,57%,55%,61%,68%,54%,55%,52%
+9,13274,VRSSCH01,Sch - Mossa,Oidium,39%,40%,31%,35%,33%,37%,40%
+9,13274,VRSSCH01,Sch - Mossa,Peronospora,61%,60%,69%,65%,67%,63%,60%
+9,13284,VRSPG05,Pg - Nuovo Mossa,Oidium,46%,42%,34%,36%,44%,36%,46%
+9,13284,VRSPG05,Pg - Nuovo Mossa,Peronospora,54%,58%,66%,64%,56%,64%,54%
+9,13321,VRSPG06,Pg - Collina Giasbana,Oidium,23%,32%,32%,38%,31%,30%,34%
+9,13321,VRSPG06,Pg - Collina Giasbana,Peronospora,77%,68%,68%,62%,69%,70%,66%
+9,13406,VRSSV02,Sau - Capannone Mossa,Oidium,37%,32%,39%,35%,35%,27%,38%
+9,13406,VRSSV02,Sau - Capannone Mossa,Peronospora,63%,68%,61%,65%,65%,73%,62%
+9,13428,VRSPG03,Ref - Mossa,Oidium,49%,48%,42%,48%,41%,39%,32%
+9,13428,VRSPG03,Ref - Mossa,Peronospora,51%,52%,58%,52%,59%,61%,68%
+9,13523,VRSFR03,ToFr - Barbais,Oidium,21%,24%,18%,27%,38%,27%,41%
+9,13523,VRSFR03,ToFr - Barbais,Peronospora,79%,76%,82%,73%,62%,73%,59%
+9,13621,VRSPG05,Pg - Capannone Mossa,Oidium,28%,33%,38%,35%,37%,38%,34%
+9,13621,VRSPG05,Pg - Capannone Mossa,Peronospora,72%,67%,62%,65%,63%,62%,66%
+40,13625,CENPG01,Pg - Piano,Oidium,27%,40%,42%,30%,20%,35%,24%
+40,13625,CENPG01,Pg - Piano,Peronospora,73%,60%,58%,70%,80%,65%,76%
+40,13636,COMSV02,Sau - Bondio,Oidium,44%,44%,47%,43%,37%,35%,32%
+40,13636,COMSV02,Sau - Bondio,Peronospora,56%,56%,53%,57%,63%,65%,68%
+9,13648,VRSMAL05,Mal-Barbais,Oidium,24%,31%,34%,24%,29%,28%,21%
+9,13648,VRSMAL05,Mal-Barbais,Peronospora,76%,69%,66%,76%,71%,72%,79%
+9,13670,VRSFR03,ToFr-Palazzo,Oidium,36%,36%,43%,36%,38%,35%,27%
+9,13670,VRSFR03,ToFr-Palazzo,Peronospora,64%,64%,57%,64%,62%,65%,73%
+9,13675,VRSCHA02,Ch-Palazzo,Oidium,27%,27%,31%,22%,29%,31%,28%
+9,13675,VRSCHA02,Ch-Palazzo,Peronospora,73%,73%,69%,78%,71%,69%,72%
+9,13676,VRSFR04,ToFr-Silvaner,Oidium,24%,27%,31%,25%,29%,25%,19%
+9,13676,VRSFR04,ToFr-Silvaner,Peronospora,76%,73%,69%,75%,71%,75%,81%
+9,13680,VRSMAL06,Mal-Palazzo,Oidium,25%,27%,31%,24%,29%,29%,21%
+9,13680,VRSMAL06,Mal-Palazzo,Peronospora,75%,73%,69%,76%,71%,71%,79%
+9,13681,VRSRB05,RibG - Barbais,Oidium,24%,32%,30%,24%,26%,29%,22%
+9,13681,VRSRB05,RibG - Barbais,Peronospora,76%,68%,70%,76%,74%,71%,78%
+1,13691,VRSPG06,Pg - Barbais,Oidium,26%,32%,27%,16%,21%,23%,21%
+1,13691,VRSPG06,Pg - Barbais,Peronospora,74%,68%,73%,84%,79%,77%,79%
+1,13692,VRSMER09,Mer-Piramide,Oidium,27%,28%,27%,16%,24%,20%,19%
+1,13692,VRSMER09,Mer-Piramide,Peronospora,73%,72%,73%,84%,76%,80%,81%
+1,13698,VRSCS04,Csv-Schioppetto,Oidium,29%,30%,26%,18%,27%,29%,25%
+1,13698,VRSCS04,Csv-Schioppetto,Peronospora,71%,70%,74%,82%,73%,71%,75%
+1,14248,VRSSV07,Sv-Mausoleo,Oidium,28%,23%,22%,34%,34%,29%,32%
+1,14248,VRSSV07,Sv-Mausoleo,Peronospora,72%,77%,78%,66%,66%,71%,68%
+1,15115,VRSSV09,Mer - Nuovo Mausoleo,Oidium,33%,31%,30%,31%,27%,26%,31%
+1,15115,VRSSV09,Mer - Nuovo Mausoleo,Peronospora,67%,69%,70%,69%,73%,74%,69%
+1,15185,VRSSV09,Cha - Silvaner,Oidium,33%,27%,28%,21%,23%,25%,23%
+1,15185,VRSSV09,Cha - Silvaner,Peronospora,67%,73%,72%,79%,77%,75%,77%
+1,15194,VRSCS05,CabSau - RUSSIZ,Oidium,45%,26%,35%,34%,39%,38%,43%
+1,15194,VRSCS05,CabSau - RUSSIZ,Peronospora,55%,74%,65%,66%,61%,62%,57%
+1,15199,VRSPB05,Cha - Pb Cantina Giasbana,Oidium,37%,29%,33%,30%,31%,28%,30%
+1,15199,VRSPB05,Cha - Pb Cantina Giasbana,Peronospora,63%,71%,67%,70%,69%,72%,70%
+1,15393,VRSSV10,Cha - Pb Schioppetto,Oidium,25%,24%,25%,28%,36%,34%,38%
+1,15393,VRSSV10,Cha - Pb Schioppetto,Peronospora,75%,76%,75%,72%,64%,66%,62%
+9,15408,VRSSV11,Sau - Schioppetto,Oidium,28%,22%,25%,29%,37%,36%,34%
+9,15408,VRSSV11,Sau - Schioppetto,Peronospora,72%,78%,75%,71%,63%,64%,66%
+9,15482,VRSSV12,Pg - Nini,Oidium,41%,31%,29%,28%,37%,34%,26%
+9,15482,VRSSV12,Pg - Nini,Peronospora,59%,69%,71%,72%,63%,66%,74%
+9,15494,VRSCHA05,Ch-Acquedotto,Oidium,40%,32%,31%,27%,37%,36%,28%
+9,15494,VRSCHA05,Ch-Acquedotto,Peronospora,60%,68%,69%,73%,63%,64%,72%
+9,15502,VRSFR06,ToFr - Vecchio barbais,Oidium,43%,29%,46%,34%,29%,34%,33%
+9,15502,VRSFR06,ToFr - Vecchio barbais,Peronospora,57%,71%,54%,66%,71%,66%,67%
+9,15516,VRSPN04,Sau - Sotto Acquedotto Schioppetto,Oidium,40%,27%,48%,33%,33%,31%,34%
+9,15516,VRSPN04,Sau - Sotto Acquedotto Schioppetto,Peronospora,60%,73%,52%,67%,67%,69%,66%
+9,15565,VRSFR08,ToFr-Anfiteatro,Oidium,31%,27%,26%,33%,38%,37%,32%
+9,15565,VRSFR08,ToFr-Anfiteatro,Peronospora,69%,73%,74%,67%,62%,63%,68%
+13,15617,GIGVER01,Ver-Storico,Oidium,48%,49%,47%,50%,52%,54%,44%
+13,15617,GIGVER01,Ver-Storico,Peronospora,52%,51%,53%,50%,48%,46%,56%
+9,15626,VRSSV12,Sau - Piramide,Oidium,24%,32%,55%,34%,34%,35%,37%
+9,15626,VRSSV12,Sau - Piramide,Peronospora,76%,68%,45%,66%,66%,65%,63%
+9,15637,VRSPN05,Pn-Piramide1,Oidium,43%,41%,39%,42%,49%,49%,40%
+9,15637,VRSPN05,Pn-Piramide1,Peronospora,57%,59%,61%,58%,51%,51%,60%
+40,15640,COMPING01,Pg - Bondio,Oidium,44%,50%,43%,47%,51%,52%,43%
+40,15640,COMPING01,Pg - Bondio,Peronospora,56%,50%,57%,53%,49%,48%,57%
+13,15641,GIGPING04,Pg-Baracca,Oidium,54%,54%,53%,55%,57%,56%,48%
+13,15641,GIGPING04,Pg-Baracca,Peronospora,46%,46%,47%,45%,43%,44%,52%
+9,15646,VRSFR10,ToFr-Piramide,Oidium,33%,41%,46%,41%,41%,49%,40%
+9,15646,VRSFR10,ToFr-Piramide,Peronospora,67%,59%,54%,59%,59%,51%,60%
+9,15654,VRSMR06,Mer-Mausoleo,Oidium,47%,48%,46%,50%,50%,54%,42%
+9,15654,VRSMR06,Mer-Mausoleo,Peronospora,53%,52%,54%,50%,50%,46%,58%
+9,15658,VRSFR12,ToFr-Piramide1,Oidium,35%,41%,52%,42%,34%,37%,38%
+9,15658,VRSFR12,ToFr-Piramide1,Peronospora,65%,59%,48%,58%,66%,63%,62%
+40,15699,COMMER01,Mer - Bondio,Oidium,27%,24%,21%,27%,40%,31%,37%
+40,15699,COMMER01,Mer - Bondio,Peronospora,73%,76%,79%,73%,60%,69%,63%
+9,15702,VRSSV13,Sv-Piramide1,Oidium,30%,23%,31%,33%,32%,28%,45%
+9,15702,VRSSV13,Sv-Piramide1,Peronospora,70%,77%,69%,67%,68%,72%,55%
+9,15707,VRSPG13,Pg - Vincenzo Mausoleo,Oidium,29%,23%,22%,35%,33%,33%,36%
+9,15707,VRSPG13,Pg - Vincenzo Mausoleo,Peronospora,71%,77%,78%,65%,67%,67%,64%
+9,15717,VRSRIB07,Rib-Tesa,Oidium,32%,33%,31%,38%,33%,35%,41%
+9,15717,VRSRIB07,Rib-Tesa,Peronospora,68%,67%,69%,62%,67%,65%,59%
+9,15718,VRSSV16,Sv-Silvaner,Oidium,32%,31%,25%,40%,27%,34%,34%
+9,15718,VRSSV16,Sv-Silvaner,Peronospora,68%,69%,75%,60%,73%,66%,66%
+9,15719,VRSFR12,ToFr-Piramide2,Oidium,35%,32%,28%,37%,31%,34%,40%
+9,15719,VRSFR12,ToFr-Piramide2,Peronospora,65%,68%,72%,63%,69%,66%,60%
+9,15727,VRSPB06,Pg - Silvaner,Oidium,25%,26%,26%,39%,31%,29%,35%
+9,15727,VRSPB06,Pg - Silvaner,Peronospora,75%,74%,74%,61%,69%,71%,65%
+9,15738,VRSPG14,Pg - Basso Giasbana,Oidium,25%,39%,55%,39%,41%,42%,42%
+9,15738,VRSPG14,Pg - Basso Giasbana,Peronospora,75%,61%,45%,61%,59%,58%,58%
+13,15746,GIGMER06,Mer-Baracca,Oidium,32%,42%,57%,45%,40%,42%,43%
+13,15746,GIGMER06,Mer-Baracca,Peronospora,68%,58%,43%,55%,60%,58%,57%
+13,15759,GIGREF03,Ref-Baracca,Oidium,35%,41%,54%,41%,34%,37%,38%
+13,15759,GIGREF03,Ref-Baracca,Peronospora,65%,59%,46%,59%,66%,63%,62%
+13,15767,GIGVER02,Ver-Baracca,Oidium,40%,33%,48%,38%,36%,43%,37%
+13,15767,GIGVER02,Ver-Baracca,Peronospora,60%,67%,52%,62%,64%,57%,63%
+13,15768,GIGPIC01,Pic-Baracca,Oidium,40%,33%,47%,38%,36%,43%,37%
+13,15768,GIGPIC01,Pic-Baracca,Peronospora,60%,67%,53%,62%,64%,57%,63%
+13,15779,GIGFRIU05,ToFr-Dietro Capannone,Oidium,27%,38%,56%,38%,40%,41%,41%
+13,15779,GIGFRIU05,ToFr-Dietro Capannone,Peronospora,73%,62%,44%,62%,60%,59%,59%
+9,15854,VRSMR07,Mer-Tesa,Oidium,25%,24%,29%,28%,25%,27%,33%
+9,15854,VRSMR07,Mer-Tesa,Peronospora,75%,76%,71%,72%,75%,73%,67%
+9,15943,VRSCS07,Csv-Tesa,Oidium,33%,26%,22%,30%,37%,33%,41%
+9,15943,VRSCS07,Csv-Tesa,Peronospora,67%,74%,78%,70%,63%,67%,59%
+9,15962,VRSSV17,Sv - Tesa,Oidium,29%,29%,22%,29%,44%,36%,44%
+9,15962,VRSSV17,Sv - Tesa,Peronospora,71%,71%,78%,71%,56%,64%,56%
+40,15968,COMSV03,Sv - Cacciatore,Oidium,25%,26%,24%,28%,36%,35%,26%
+40,15968,COMSV03,Sv - Cacciatore,Peronospora,75%,74%,76%,72%,64%,65%,74%
+41,15970,COMRIE01,Rie-Cacciatore,Oidium,25%,26%,24%,28%,35%,35%,26%
+41,15970,COMRIE01,Rie-Cacciatore,Peronospora,75%,74%,76%,72%,65%,65%,74%
+9,15972,VRSRIB14,Cha - Collina Alta Giasbana,Oidium,27%,26%,27%,29%,41%,34%,45%
+9,15972,VRSRIB14,Cha - Collina Alta Giasbana,Peronospora,73%,74%,73%,71%,59%,66%,55%
+9,15983,VRSSV18,Sv - Tesa R3,Oidium,29%,28%,24%,31%,38%,36%,28%
+9,15983,VRSSV18,Sv - Tesa R3,Peronospora,71%,72%,76%,69%,62%,64%,72%
+31,16026,GIGRIB01,RibG-Dietro Capannone,Oidium,35%,42%,48%,43%,43%,44%,43%
+31,16026,GIGRIB01,RibG-Dietro Capannone,Peronospora,65%,58%,52%,57%,57%,56%,57%
+41,16035,COMSV01,Sv-Sottocasa,Oidium,35%,38%,64%,48%,38%,39%,39%
+41,16035,COMSV01,Sv-Sottocasa,Peronospora,65%,62%,36%,52%,62%,61%,61%
+31,16193,GIGVER04,Ver-Lello,Oidium,31%,39%,52%,37%,39%,40%,39%
+31,16193,GIGVER04,Ver-Lello,Peronospora,69%,61%,48%,63%,61%,60%,61%
+31,16275,GIGFRI06,ToFr-Lello,Oidium,38%,37%,51%,45%,46%,43%,42%
+31,16275,GIGFRI06,ToFr-Lello,Peronospora,62%,63%,49%,55%,54%,57%,58%
+31,16279,GIGMER07,Mer-Lello,Oidium,40%,40%,53%,44%,45%,40%,41%
+31,16279,GIGMER07,Mer-Lello,Peronospora,60%,60%,47%,56%,55%,60%,59%
+31,16295,GIGFRI07,ToFr-Cava,Oidium,44%,44%,40%,45%,47%,50%,44%
+31,16295,GIGFRI07,ToFr-Cava,Peronospora,56%,56%,60%,55%,53%,50%,56%
+31,16519,GIGFRI07,ToFr-Muinie  (suora),Oidium,23%,31%,54%,33%,33%,34%,35%
+31,16519,GIGFRI07,ToFr-Muinie  (suora),Peronospora,77%,69%,46%,67%,67%,66%,65%
+31,16567,GIGFRI08,ToFr-Nevio,Oidium,25%,32%,55%,34%,34%,36%,37%
+31,16567,GIGFRI08,ToFr-Nevio,Peronospora,75%,68%,45%,66%,66%,64%,63%
+41,16595,COMPIG01,Pig-Sottocasa,Oidium,31%,23%,24%,31%,36%,36%,30%
+41,16595,COMPIG01,Pig-Sottocasa,Peronospora,69%,77%,76%,69%,64%,64%,70%
+31,16713,GIGCABF04,Cf-Nevio,Oidium,37%,36%,52%,42%,34%,36%,35%
+31,16713,GIGCABF04,Cf-Nevio,Peronospora,63%,64%,48%,58%,66%,64%,65%
+41,16716,COMMAL01,Mal - Sottocasa,Oidium,27%,32%,21%,9%,29%,21%,25%
+41,16716,COMMAL01,Mal - Sottocasa,Peronospora,73%,68%,79%,91%,71%,79%,75%
+41,16718,COMMER02,Mer - Sottocasa,Oidium,27%,32%,21%,9%,29%,21%,25%
+41,16718,COMMER02,Mer - Sottocasa,Peronospora,73%,68%,79%,91%,71%,79%,75%
+9,16722,VRSSV19,Sau - Georgie,Oidium,28%,33%,22%,12%,33%,26%,27%
+9,16722,VRSSV19,Sau - Georgie,Peronospora,72%,67%,78%,88%,67%,74%,73%
+41,16725,COMPIC01,Pic - 2014 Sottocasa,Oidium,27%,32%,22%,10%,30%,23%,26%
+41,16725,COMPIC01,Pic - 2014 Sottocasa,Peronospora,73%,68%,78%,90%,70%,77%,74%
+9,16740,VRSPG16,Pg - Georgie,Oidium,37%,33%,38%,31%,34%,32%,35%
+9,16740,VRSPG16,Pg - Georgie,Peronospora,63%,67%,62%,69%,66%,68%,65%
+31,16764,GIGMER07,Mer-NevioNuovo,Oidium,33%,26%,29%,30%,32%,39%,42%
+31,16764,GIGMER07,Mer-NevioNuovo,Peronospora,67%,74%,71%,70%,68%,61%,58%
+9,16841,RSSRB06,CabFranc - Innesti,Oidium,38%,36%,39%,33%,39%,32%,39%
+9,16841,RSSRB06,CabFranc - Innesti,Peronospora,62%,64%,61%,67%,61%,68%,61%
+9,16842,RSSPG23,Mer - Spessa,Oidium,39%,33%,33%,31%,42%,37%,36%
+9,16842,RSSPG23,Mer - Spessa,Peronospora,61%,67%,67%,69%,58%,63%,64%
+31,16857,GIGPINB06,Pb-NevioNuovo,Oidium,36%,33%,37%,31%,37%,25%,36%
+31,16857,GIGPINB06,Pb-NevioNuovo,Peronospora,64%,67%,63%,69%,63%,75%,64%
+31,16859,GIGFRI07,ToFr-NevioNuovo,Oidium,35%,32%,37%,32%,38%,23%,37%
+31,16859,GIGFRI07,ToFr-NevioNuovo,Peronospora,65%,68%,63%,68%,62%,77%,63%
+31,16862,GIGPING07,Pg-MoraroCimitero,Oidium,32%,29%,39%,32%,34%,22%,40%
+31,16862,GIGPING07,Pg-MoraroCimitero,Peronospora,68%,71%,61%,68%,66%,78%,60%
+31,16863,GIGSCH08,Sch-MoraroVecchio,Oidium,35%,36%,39%,34%,37%,26%,36%
+31,16863,GIGSCH08,Sch-MoraroVecchio,Peronospora,65%,64%,61%,66%,63%,74%,64%
+31,16870,GIGREF04,Ref-MoraroVecchio,Oidium,36%,38%,37%,33%,40%,37%,34%
+31,16870,GIGREF04,Ref-MoraroVecchio,Peronospora,64%,62%,63%,67%,60%,63%,66%
+31,16875,GIGCABF05,Cf-MoraroVecchio,Oidium,36%,35%,37%,44%,47%,45%,39%
+31,16875,GIGCABF05,Cf-MoraroVecchio,Peronospora,64%,65%,63%,56%,53%,55%,61%
+31,16877,GIGREF07,Ref-MoraroNuovo,Oidium,39%,41%,41%,42%,43%,38%,39%
+31,16877,GIGREF07,Ref-MoraroNuovo,Peronospora,61%,59%,59%,58%,57%,62%,61%
+31,16892,GIGSCH05,Sch-MoraroNuovo,Oidium,31%,41%,61%,47%,41%,41%,44%
+31,16892,GIGSCH05,Sch-MoraroNuovo,Peronospora,69%,59%,39%,53%,59%,59%,56%
+31,16914,GIGCABF07,Cf-Montanovo,Oidium,37%,34%,39%,32%,34%,23%,37%
+31,16914,GIGCABF07,Cf-Montanovo,Peronospora,63%,66%,61%,68%,66%,77%,63%
+31,16932,GIGFRI08,ToFr-Montanovo,Oidium,33%,30%,39%,33%,37%,23%,40%
+31,16932,GIGFRI08,ToFr-Montanovo,Peronospora,67%,70%,61%,67%,63%,77%,60%
+9,16941,RSSRIB07,Rib - SF Rudere,Oidium,18%,29%,32%,32%,36%,36%,31%
+9,16941,RSSRIB07,Rib - SF Rudere,Peronospora,82%,71%,68%,68%,64%,64%,69%
+40,16975,GIGPING07,Pg-Montanovo,Oidium,35%,33%,38%,31%,38%,24%,37%
+40,16975,GIGPING07,Pg-Montanovo,Peronospora,65%,67%,62%,69%,62%,76%,63%
+9,17009,RSSFR09,ToFr - SanFloriano Rudere Alto,Oidium,19%,30%,34%,34%,38%,34%,32%
+9,17009,RSSFR09,ToFr - SanFloriano Rudere Alto,Peronospora,81%,70%,66%,66%,62%,66%,68%
+9,17021,RSSPB07,Sau - R3 Sopra,Oidium,34%,39%,41%,41%,36%,39%,48%
+9,17021,RSSPB07,Sau - R3 Sopra,Peronospora,66%,61%,59%,59%,64%,61%,52%
+40,17050,GIGMER08,Mer-Montanuovo,Oidium,34%,37%,45%,40%,39%,48%,38%
+40,17050,GIGMER08,Mer-Montanuovo,Peronospora,66%,63%,55%,60%,61%,52%,62%
+9,17099,RSSMAL08,Mal - Rudere,Oidium,30%,25%,38%,31%,37%,22%,40%
+9,17099,RSSMAL08,Mal - Rudere,Peronospora,70%,75%,62%,69%,63%,78%,60%
+9,17124,RSSPB09,Pb - Rudere Alto,Oidium,39%,33%,33%,31%,42%,37%,36%
+9,17124,RSSPB09,Pb - Rudere Alto,Peronospora,61%,67%,67%,69%,58%,63%,64%
+40,17139,GIGPINB05,Pb-Montanuovo,Oidium,25%,34%,55%,37%,35%,36%,37%
+40,17139,GIGPINB05,Pb-Montanuovo,Peronospora,75%,66%,45%,63%,65%,64%,63%
+9,17142,RSSFR10,ToFr - SanFloriano Rudere Basso,Oidium,26%,28%,35%,37%,39%,34%,32%
+9,17142,RSSFR10,ToFr - SanFloriano Rudere Basso,Peronospora,74%,72%,65%,63%,61%,66%,68%
+9,17165,RSSPB18,Pb -  Rudere Basso,Oidium,32%,35%,32%,37%,43%,38%,42%
+9,17165,RSSPB18,Pb -  Rudere Basso,Peronospora,68%,65%,68%,63%,57%,62%,58%
+45,17171,ERMPIG01,Pig-Mario Casa,Oidium,36%,34%,34%,39%,41%,35%,35%
+45,17171,ERMPIG01,Pig-Mario Casa,Peronospora,64%,66%,66%,61%,59%,65%,65%
+40,17179,ABERVER10,Ver-Nimis2 Estirpato 2017,Oidium,37%,38%,53%,42%,33%,33%,37%
+40,17179,ABERVER10,Ver-Nimis2 Estirpato 2017,Peronospora,63%,62%,47%,58%,67%,67%,63%
+40,17184,ABERSV01,Sv-Nimis,Oidium,35%,39%,53%,40%,33%,34%,37%
+40,17184,ABERSV01,Sv-Nimis,Peronospora,65%,61%,47%,60%,67%,66%,63%
+40,17190,ABERVER06,Ver - Casa,Oidium,40%,36%,55%,39%,38%,42%,38%
+40,17190,ABERVER06,Ver - Casa,Peronospora,60%,64%,45%,61%,62%,58%,62%
+9,17196,RSSPB19,Pb - SanFloriano ,Oidium,31%,24%,26%,38%,41%,35%,44%
+9,17196,RSSPB19,Pb - SanFloriano ,Peronospora,69%,76%,74%,62%,59%,65%,56%
+42,17198,COMPIC02,Pic - Sottocasa,Oidium,32%,24%,22%,32%,33%,37%,41%
+42,17198,COMPIC02,Pic - Sottocasa,Peronospora,68%,76%,78%,68%,67%,63%,59%
+42,17202,COMSV05,Sv-ExPinotGrigio,Oidium,30%,21%,19%,31%,34%,35%,38%
+42,17202,COMSV05,Sv-ExPinotGrigio,Peronospora,70%,79%,81%,69%,66%,65%,62%
+42,17205,COMFRI01,ToFr-Cjucule,Oidium,26%,23%,20%,29%,34%,35%,36%
+42,17205,COMFRI01,ToFr-Cjucule,Peronospora,74%,77%,80%,71%,66%,65%,64%
+40,17215,ABERRF02,Ref-Motta,Oidium,37%,37%,44%,37%,35%,43%,38%
+40,17215,ABERRF02,Ref-Motta,Peronospora,63%,63%,56%,63%,65%,57%,62%
+42,17227,COMMAL03,Mal-Cjucule,Oidium,29%,21%,20%,30%,30%,35%,38%
+42,17227,COMMAL03,Mal-Cjucule,Peronospora,71%,79%,80%,70%,70%,65%,62%
+40,17232,ABERMR01,Mer-Motta,Oidium,36%,35%,44%,38%,35%,43%,39%
+40,17232,ABERMR01,Mer-Motta,Peronospora,64%,65%,56%,62%,65%,57%,61%
+40,17237,ABERVER03,Ver-LisCampanellis,Oidium,24%,32%,55%,34%,34%,35%,37%
+40,17237,ABERVER03,Ver-LisCampanellis,Peronospora,76%,68%,45%,66%,66%,65%,63%
+40,17266,ABERCF01,Cf-Motta,Oidium,24%,36%,53%,37%,36%,37%,35%
+40,17266,ABERCF01,Cf-Motta,Peronospora,76%,64%,47%,63%,64%,63%,65%
+40,17371,ABERVER08,Ver-GildoAlto,Oidium,22%,34%,52%,34%,34%,36%,37%
+40,17371,ABERVER08,Ver-GildoAlto,Peronospora,78%,66%,48%,66%,66%,64%,63%
+42,17381,COMCHA01,Ch-Sotlamont,Oidium,37%,39%,37%,35%,40%,33%,30%
+42,17381,COMCHA01,Ch-Sotlamont,Peronospora,63%,61%,63%,65%,60%,67%,70%
+40,17386,ABERVER07,Ver-GildoBasso,Oidium,38%,41%,35%,36%,37%,32%,28%
+40,17386,ABERVER07,Ver-GildoBasso,Peronospora,62%,59%,65%,64%,63%,68%,72%
+40,17387,ABERCH01,Ch-Affitto,Oidium,38%,41%,35%,36%,37%,32%,28%
+40,17387,ABERCH01,Ch-Affitto,Peronospora,62%,59%,65%,64%,63%,68%,72%
+40,17396,BDVTC02,ToFr-Modolett,Oidium,46%,36%,35%,35%,41%,35%,35%
+40,17396,BDVTC02,ToFr-Modolett,Peronospora,54%,64%,65%,65%,59%,65%,65%
+9,17540,RSSCHA20,Cha - Belvedere Sotto,Oidium,18%,30%,33%,33%,37%,36%,31%
+9,17540,RSSCHA20,Cha - Belvedere Sotto,Peronospora,82%,70%,67%,67%,63%,64%,69%
+9,17559,RSSCHA21,Cha - Belvedere Sopra,Oidium,27%,23%,33%,25%,35%,29%,26%
+9,17559,RSSCHA21,Cha - Belvedere Sopra,Peronospora,73%,77%,67%,75%,65%,71%,74%
+42,17568,COMFRI02,ToFr-Sotlamont,Oidium,36%,41%,33%,28%,29%,34%,33%
+42,17568,COMFRI02,ToFr-Sotlamont,Peronospora,64%,59%,67%,72%,71%,66%,67%
+40,17570,BDVPG01,Pg-Modolet,Oidium,24%,24%,20%,27%,31%,23%,30%
+40,17570,BDVPG01,Pg-Modolet,Peronospora,76%,76%,80%,73%,69%,77%,70%
+40,17575,BDVPB01,Pb-Modolet,Oidium,26%,17%,17%,18%,15%,18%,27%
+40,17575,BDVPB01,Pb-Modolet,Peronospora,74%,83%,83%,82%,85%,82%,73%
+9,17702,RSSPG28,Rib - Vecchia Bosco,Oidium,37%,42%,45%,39%,42%,44%,49%
+9,17702,RSSPG28,Rib - Vecchia Bosco,Peronospora,63%,58%,55%,61%,58%,56%,51%
+40,17868,BDVTC03,ToFr-Modolet,Oidium,37%,38%,35%,26%,33%,36%,32%
+40,17868,BDVTC03,ToFr-Modolet,Peronospora,63%,62%,65%,74%,67%,64%,68%
+40,18215,BDVMR01,Mer-Fratta,Oidium,46%,43%,48%,56%,62%,60%,61%
+40,18215,BDVMR01,Mer-Fratta,Peronospora,54%,57%,52%,44%,38%,40%,39%
+40,18216,BDVMR02,Mer-Fratta1,Oidium,48%,51%,55%,59%,61%,58%,64%
+40,18216,BDVMR02,Mer-Fratta1,Peronospora,52%,49%,45%,41%,39%,42%,36%
+40,18233,BDVCF01,Cf-Fratta,Oidium,18%,24%,12%,11%,14%,17%,25%
+40,18233,BDVCF01,Cf-Fratta,Peronospora,82%,76%,88%,89%,86%,83%,75%
+40,18243,BDVCAR01,Car-Fratta01,Oidium,19%,25%,11%,10%,15%,13%,26%
+40,18243,BDVCAR01,Car-Fratta01,Peronospora,81%,75%,89%,90%,85%,87%,74%
+40,18254,BDVMR03,Mer-Fratta2,Oidium,35%,44%,34%,33%,44%,46%,41%
+40,18254,BDVMR03,Mer-Fratta2,Peronospora,65%,56%,66%,67%,56%,54%,59%
+40,18262,BDVCAR02,Car-Fratta02,Oidium,38%,42%,51%,42%,43%,54%,57%
+40,18262,BDVCAR02,Car-Fratta02,Peronospora,62%,58%,49%,58%,57%,46%,43%
+40,18268,BDVCF02,Cf-Fratta1,Oidium,37%,32%,32%,27%,31%,35%,33%
+40,18268,BDVCF02,Cf-Fratta1,Peronospora,63%,68%,68%,73%,69%,65%,67%
+9,18292,RSSSV25,Cha - Agriturismo,Oidium,24%,27%,20%,28%,24%,26%,30%
+9,18292,RSSSV25,Cha - Agriturismo,Peronospora,76%,73%,80%,72%,76%,74%,70%
+42,18303,COMMER03,Mer-Gondolo,Oidium,24%,29%,23%,28%,24%,23%,26%
+42,18303,COMMER03,Mer-Gondolo,Peronospora,76%,71%,77%,72%,76%,77%,74%
+42,18338,COMCABS01,Csv - Gondolo Estirpo 2014,Oidium,28%,25%,22%,29%,39%,28%,36%
+42,18338,COMCABS01,Csv - Gondolo Estirpo 2014,Peronospora,72%,75%,78%,71%,61%,72%,64%
+42,18427,COMCABS03,CabSau - Bosco Gondolo,Oidium,42%,30%,35%,38%,38%,41%,41%
+42,18427,COMCABS03,CabSau - Bosco Gondolo,Peronospora,58%,70%,65%,62%,62%,59%,59%
+40,18445,BDVSV01,Sv-Fratta,Oidium,41%,38%,32%,41%,42%,37%,41%
+40,18445,BDVSV01,Sv-Fratta,Peronospora,59%,62%,68%,59%,58%,63%,59%
+40,18446,BDVREF01,Ref-Fratta,Oidium,47%,45%,45%,29%,42%,30%,45%
+40,18446,BDVREF01,Ref-Fratta,Peronospora,53%,55%,55%,71%,58%,70%,55%
+40,18447,BDVMAL01,Mal-Versa Giovane,Oidium,37%,43%,34%,29%,36%,35%,31%
+40,18447,BDVMAL01,Mal-Versa Giovane,Peronospora,63%,57%,66%,71%,64%,65%,69%
+42,18534,COMCABS04,CabSau - Gondolo,Oidium,32%,33%,41%,35%,31%,30%,30%
+42,18534,COMCABS04,CabSau - Gondolo,Peronospora,68%,67%,59%,65%,69%,70%,70%
+40,18570,,Mal-Versa1,Oidium,29%,24%,24%,25%,26%,29%,25%
+40,18570,,Mal-Versa1,Peronospora,71%,76%,76%,75%,74%,71%,75%
+42,18975,COMREF01,RefDPR-Gondolo,Oidium,19%,24%,13%,16%,14%,15%,22%
+42,18975,COMREF01,RefDPR-Gondolo,Peronospora,81%,76%,87%,84%,86%,85%,78%
+42,19011,COMFRI03,ToFr - SanMauro Estirpo 2015,Oidium,32%,34%,31%,39%,43%,38%,41%
+42,19011,COMFRI03,ToFr - SanMauro Estirpo 2015,Peronospora,68%,66%,69%,61%,57%,62%,59%
+42,19085,COMPING03,Pg - Vecchio SanMauro,Oidium,43%,36%,43%,37%,46%,38%,37%
+42,19085,COMPING03,Pg - Vecchio SanMauro,Peronospora,57%,64%,57%,63%,54%,62%,63%
+42,19260,COMCABS02,Csv-SanMauro,Oidium,12%,14%,8%,15%,15%,19%,27%
+42,19260,COMCABS02,Csv-SanMauro,Peronospora,88%,86%,92%,85%,85%,81%,73%
+42,19261,COMPING02,Pg - 2014 SanMauro,Oidium,13%,15%,7%,13%,11%,19%,20%
+42,19261,COMPING02,Pg - 2014 SanMauro,Peronospora,87%,85%,93%,87%,89%,81%,80%
+42,19287,DANincolto,Rib 2016 - Potocco,Oidium,52%,47%,44%,42%,38%,38%,46%
+42,19287,DANincolto,Rib 2016 - Potocco,Peronospora,48%,53%,56%,58%,62%,62%,54%
+43,19315,DANPG01,Pg-Potocco,Oidium,39%,28%,25%,22%,46%,37%,27%
+43,19315,DANPG01,Pg-Potocco,Peronospora,61%,72%,75%,78%,54%,63%,73%
+43,19316,DANFR01,ToFr-Potocco,Oidium,31%,34%,40%,40%,40%,38%,30%
+43,19316,DANFR01,ToFr-Potocco,Peronospora,69%,66%,60%,60%,60%,62%,70%
+43,19371,DANPB01,Pb-Potocco,Oidium,27%,26%,34%,29%,35%,24%,38%
+43,19371,DANPB01,Pb-Potocco,Peronospora,73%,74%,66%,71%,65%,76%,62%
+43,19376,DANRB02,Rib-Letizie,Oidium,33%,28%,40%,42%,34%,37%,35%
+43,19376,DANRB02,Rib-Letizie,Peronospora,67%,72%,60%,58%,66%,63%,65%
+43,19378,DANSV02,Sv-Letizie,Oidium,32%,30%,23%,34%,39%,36%,31%
+43,19378,DANSV02,Sv-Letizie,Peronospora,68%,70%,77%,66%,61%,64%,69%
+43,19386,DANCH01,Ch-Letizie,Oidium,29%,19%,19%,29%,30%,34%,32%
+43,19386,DANCH01,Ch-Letizie,Peronospora,71%,81%,81%,71%,70%,66%,68%
+43,19388,DANMR09,Mer-Letizie,Oidium,37%,37%,33%,31%,39%,34%,29%
+43,19388,DANMR09,Mer-Letizie,Peronospora,63%,63%,67%,69%,61%,66%,71%
+43,19396,DANCS01,Csv-Letizie,Oidium,28%,22%,20%,27%,29%,29%,32%
+43,19396,DANCS01,Csv-Letizie,Peronospora,72%,78%,80%,73%,71%,71%,68%
+43,19414,DANPG03,Pg-K2,Oidium,25%,31%,37%,44%,36%,35%,40%
+43,19414,DANPG03,Pg-K2,Peronospora,75%,69%,63%,56%,64%,65%,60%
+43,19425,DANCF02,Cf - K2,Oidium,27%,31%,28%,32%,38%,35%,30%
+43,19425,DANCF02,Cf - K2,Peronospora,73%,69%,72%,68%,62%,65%,70%
+43,19438,DANVER03,Ver-Monico1,Oidium,37%,42%,48%,54%,47%,50%,44%
+43,19438,DANVER03,Ver-Monico1,Peronospora,63%,58%,52%,46%,53%,50%,56%
+43,19447,DANPB03,Pb-Monico,Oidium,49%,51%,58%,64%,48%,49%,48%
+43,19447,DANPB03,Pb-Monico,Peronospora,51%,49%,42%,36%,52%,51%,52%
+43,19454,DANMT03,Muller-Monico,Oidium,43%,43%,40%,32%,35%,37%,35%
+43,19454,DANMT03,Muller-Monico,Peronospora,57%,57%,60%,68%,65%,63%,65%
+43,19485,DANMAL02,Mal-Monico,Oidium,35%,39%,32%,28%,33%,35%,35%
+43,19485,DANMAL02,Mal-Monico,Peronospora,65%,61%,68%,72%,67%,65%,65%
+43,19585,DANVER04,Ver+Pic-Monico,Oidium,37%,46%,55%,46%,41%,42%,41%
+43,19585,DANVER04,Ver+Pic-Monico,Peronospora,63%,54%,45%,54%,59%,58%,59%
+43,19623,DANCS03,Cf+Sv-Monico,Oidium,25%,41%,41%,25%,26%,26%,22%
+43,19623,DANCS03,Cf+Sv-Monico,Peronospora,75%,59%,59%,75%,74%,74%,78%
+43,19642,DANVER05,Ver-Monico,Oidium,46%,57%,52%,44%,39%,47%,43%
+43,19642,DANVER05,Ver-Monico,Peronospora,54%,43%,48%,56%,61%,53%,57%
+43,19645,DANMR10,Mer-DietroVilla,Oidium,49%,53%,57%,59%,53%,55%,46%
+43,19645,DANMR10,Mer-DietroVilla,Peronospora,51%,47%,43%,41%,47%,45%,54%
+43,19698,DANSC03,Sch-Vlila,Oidium,28%,20%,19%,28%,30%,30%,30%
+43,19698,DANSC03,Sch-Vlila,Peronospora,72%,80%,81%,72%,70%,70%,70%
+43,19723,DANPN02,Pn-Villa,Oidium,26%,21%,20%,28%,34%,31%,34%
+43,19723,DANPN02,Pn-Villa,Peronospora,74%,79%,80%,72%,66%,69%,66%
+43,19731,DANMR01,Mer - Sottomonte EST,Oidium,29%,20%,19%,31%,34%,35%,38%
+43,19731,DANMR01,Mer - Sottomonte EST,Peronospora,71%,80%,81%,69%,66%,65%,62%
+43,100002,DANMR01,Mer - Sottomonte OVEST,Oidium,27%,27%,20%,30%,35%,34%,35%
+43,100002,DANMR01,Mer - Sottomonte OVEST,Peronospora,73%,73%,80%,70%,65%,66%,65%
+44,100017,DANCS04,Csv-Sottomonte,Oidium,38%,49%,51%,51%,56%,56%,55%
+44,100017,DANCS04,Csv-Sottomonte,Peronospora,62%,51%,49%,49%,44%,44%,45%
+44,100022,DANFR08,ToFr - 7,Oidium,28%,30%,25%,28%,37%,28%,38%
+44,100022,DANFR08,ToFr - 7,Peronospora,72%,70%,75%,72%,63%,72%,62%
+44,100024,DANFR07,ToFr - 4,Oidium,26%,33%,31%,31%,41%,32%,34%
+44,100024,DANFR07,ToFr - 4,Peronospora,74%,67%,69%,69%,59%,68%,66%
+44,100122,DANVER01,Verd-Clama,Oidium,32%,22%,20%,30%,42%,38%,40%
+44,100122,DANVER01,Verd-Clama,Peronospora,68%,78%,80%,70%,58%,62%,60%
+44,100237,DANSC04,Sch-Clama,Oidium,34%,33%,37%,36%,37%,39%,35%
+44,100237,DANSC04,Sch-Clama,Peronospora,66%,67%,63%,64%,63%,61%,65%
+44,100255,DANMR07,Mer-Clama,Oidium,30%,35%,44%,21%,22%,31%,27%
+44,100255,DANMR07,Mer-Clama,Peronospora,70%,65%,56%,79%,78%,69%,73%
+44,100258,DANFR09,ToFr-Clama,Oidium,32%,37%,43%,27%,25%,35%,27%
+44,100258,DANFR09,ToFr-Clama,Peronospora,68%,63%,57%,73%,75%,65%,73%
+44,100265,DANRB05,Rib-Clama,Oidium,41%,49%,45%,38%,37%,48%,34%
+44,100265,DANRB05,Rib-Clama,Peronospora,59%,51%,55%,62%,63%,52%,66%
+44,100270,DANSTO,Merlot storico -Clama,Oidium,36%,35%,39%,33%,27%,28%,22%
+44,100270,DANSTO,Merlot storico -Clama,Peronospora,64%,65%,61%,67%,73%,72%,78%
+44,100278,DANMR05,Mer-Macoring,Oidium,46%,49%,51%,47%,44%,42%,39%
+44,100278,DANMR05,Mer-Macoring,Peronospora,54%,51%,49%,53%,56%,58%,61%
+44,100280,DANMR06,Mer-ExGDC,Oidium,29%,38%,45%,29%,28%,30%,29%
+44,100280,DANMR06,Mer-ExGDC,Peronospora,71%,62%,55%,71%,72%,70%,71%
+44,100293,DANRF05,Ref-TesaGiovane,Oidium,32%,38%,45%,36%,26%,45%,29%
+44,100293,DANRF05,Ref-TesaGiovane,Peronospora,68%,62%,55%,64%,74%,55%,71%
+44,100300,DANRF06,Ref-TesaVecchio,Oidium,31%,38%,46%,36%,26%,46%,29%
+44,100300,DANRF06,Ref-TesaVecchio,Peronospora,69%,62%,54%,64%,74%,54%,71%
+44,100335,DANRF07,Ref-Azienda,Oidium,30%,28%,35%,31%,36%,26%,37%
+44,100335,DANRF07,Ref-Azienda,Peronospora,70%,72%,65%,69%,64%,74%,63%
+44,100372,DANMR08,Mer-7,Oidium,33%,41%,40%,40%,36%,28%,19%
+44,100372,DANMR08,Mer-7,Peronospora,67%,59%,60%,60%,64%,72%,81%
+44,100394,DANPB04,Pb-7,Oidium,30%,28%,35%,31%,36%,26%,37%
+44,100394,DANPB04,Pb-7,Peronospora,70%,72%,65%,69%,64%,74%,63%
+44,100435,ERMSV02,Sv-Barazut,Oidium,45%,46%,47%,50%,47%,35%,31%
+44,100435,ERMSV02,Sv-Barazut,Peronospora,55%,54%,53%,50%,53%,65%,69%
+44,100443,ERMSV03,Sv - Buttrio EO,Oidium,34%,36%,43%,31%,40%,44%,26%
+44,100443,ERMSV03,Sv - Buttrio EO,Peronospora,66%,64%,57%,69%,60%,56%,74%
+44,100564,ERMSV01,Sv-Bersane,Oidium,23%,24%,11%,11%,18%,16%,28%
+44,100564,ERMSV01,Sv-Bersane,Peronospora,77%,76%,89%,89%,82%,84%,72%
+44,100632,ERMSV09,Sv-Rocca,Oidium,33%,36%,31%,35%,41%,36%,42%
+44,100632,ERMSV09,Sv-Rocca,Peronospora,67%,64%,69%,65%,59%,64%,58%
+44,100669,ERMSV06,Sv-Cantina,Oidium,37%,34%,35%,31%,39%,24%,38%
+44,100669,ERMSV06,Sv-Cantina,Peronospora,63%,66%,65%,69%,61%,76%,62%
