@@ -5,6 +5,10 @@ from io import StringIO
 from datetime import datetime
 import numpy as np
 
+today = datetime.today().date()
+LOCAL = True  # True if running locally, False for production
+GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/formatted_infection_risks_{today}.csv"
+
 # --- Page Configuration ---
 st.set_page_config(
     page_title="Infection Risk Predictions Viewer",
@@ -14,16 +18,13 @@ st.set_page_config(
 
 # --- App Title ---
 st.title("Vineyard Infection Risk Predictions Viewer")
-today = datetime.today().date()
-GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/infection_risk_7days_{today}.csv"
-
 
 # --- Data Loading ---
 @st.cache_data
 def load_data_from_url(url):
     """
-    Loads prediction data from a raw GitHub URL using the requests library.
-    Returns a pandas DataFrame with the new format.
+    Loads risk prediction data from a raw GitHub URL using the requests library.
+    Returns a pandas DataFrame with the formatted CSV structure.
     """
     try:
         response = requests.get(url)
@@ -34,26 +35,30 @@ def load_data_from_url(url):
 
         df = pd.read_csv(csv_file)
 
-        # --- Data Validation and Transformation ---
-        # Check if we have the expected columns
-        if 'Ente' not in df.columns or 'IdVigneto' not in df.columns or 'Infection' not in df.columns:
-            st.error("Error: The CSV file must contain 'Ente', 'IdVigneto' and 'Infection' columns.")
+        # --- Data Validation and Transformation for New Format ---
+        # Check if we have the expected columns for the new format
+        if 'RagioneSociale' not in df.columns or 'NomeVigneto' not in df.columns:
+            st.error("Error: The CSV file must contain 'RagioneSociale' and 'NomeVigneto' columns.")
             return None
 
-        # Get date columns (all columns that are not metadata)
-        metadata_cols = ['Ente', 'IdVigneto', 'Codice', 'NomeVigneto', 'Infection']
-        date_cols = [col for col in df.columns if col not in metadata_cols]
+        # Get risk columns (columns containing "Risk_Percent" in their name)
+        metadata_cols = ['RagioneSociale', 'NomeVigneto']
+        risk_cols = [col for col in df.columns if 'Risk_Percent' in col]
 
-        if not date_cols:
-            st.error("Error: No date columns found in the CSV file.")
+        if not risk_cols:
+            st.error("Error: No risk percentage columns found in the CSV file.")
+            st.write("Available columns:", list(df.columns))
             return None
 
-        # Clean the percentage values in date columns (remove % and convert to float)
-        for col in date_cols:
-            df[col] = df[col].astype(str).str.replace('%', '').astype(float) / 100
+        # The risk values are already as percentages, convert to decimal for internal processing
+        for col in risk_cols:
+            # Convert to numeric, handling any non-numeric values
+            df[col] = pd.to_numeric(df[col], errors='coerce') / 100
 
-        # Add date columns as datetime for filtering
-        df['date_columns'] = [date_cols] * len(df)
+        # Check for any rows with all NaN risk values and report
+        nan_rows = df[risk_cols].isna().all(axis=1).sum()
+        if nan_rows > 0:
+            st.warning(f"Warning: {nan_rows} rows have invalid risk data and will be excluded from analysis.")
 
         return df
 
@@ -66,160 +71,225 @@ def load_data_from_url(url):
         return None
 
 
-# --- Main App Logic ---
-df_original = load_data_from_url(GITHUB_RAW_URL)
+if not LOCAL :
+    df_original = load_data_from_url(GITHUB_RAW_URL)
+else:
+    df_original = pd.read_csv("formatted_infection_risks_2025-07-25.csv")
+    # The new format has RagioneSociale, NomeVigneto and risk percentage columns
+    if 'RagioneSociale' not in df_original.columns or 'NomeVigneto' not in df_original.columns:
+        st.error("Error: The CSV file must contain 'RagioneSociale' and 'NomeVigneto' columns.")
 
-# The rest of the app will only proceed if the data has been successfully loaded.
-if df_original is not None:
-    # Get date columns for filtering and display
-    metadata_cols = ['Ente', 'IdVigneto', 'Codice', 'NomeVigneto', 'Infection']
-    date_cols = [col for col in df_original.columns if col not in metadata_cols and col != 'date_columns']
+    # Get risk columns (columns containing "Risk_Percent" in their name)
+    metadata_cols = ['RagioneSociale', 'NomeVigneto']
+    risk_cols = [col for col in df_original.columns if 'Risk_Percent' in col]
 
-    # --- Sidebar for Filtering ---
-    st.sidebar.header("Filter Options")
+    if not risk_cols:
+        st.error("Error: No risk percentage columns found in the CSV file.")
+        st.write("Available columns:", list(df_original.columns))
 
-    # Filter by Company/Ente (multiselect)
-    if 'Ente' in df_original.columns:
-        ente_values = sorted(df_original['Ente'].unique())
-        selected_entes = st.sidebar.multiselect(
-            "Select Company/Ente",
-            options=ente_values,
-            default=[]
-        )
-    else:
-        selected_entes = []
-        st.sidebar.warning("'Ente' column not found for filtering.")
+    # The risk values are already as percentages, convert to decimal for internal processing
+    for col in risk_cols:
+        # Convert to numeric, handling any non-numeric values
+        df_original[col] = pd.to_numeric(df_original[col], errors='coerce') / 100
 
-    # Filter by Vineyard Name (multiselect)
-    if 'NomeVigneto' in df_original.columns:
-        vineyard_names = df_original['NomeVigneto'].unique()
-        selected_vineyards = st.sidebar.multiselect(
-            "Select Vineyard(s)",
-            options=sorted(vineyard_names),
-            default=[]
-        )
-    else:
-        selected_vineyards = []
-        st.sidebar.warning("'NomeVigneto' column not found for filtering.")
+    # Check for any rows with all NaN risk values and report
+    nan_rows = df_original[risk_cols].isna().all(axis=1).sum()
+    if nan_rows > 0:
+        st.warning(f"Warning: {nan_rows} rows have invalid risk data and will be excluded from analysis.")
 
-    # Filter by Infection Type
-    if 'Infection' in df_original.columns:
-        infection_types = df_original['Infection'].unique()
-        selected_infections = st.sidebar.multiselect(
-            "Select Infection Type(s)",
-            options=sorted(infection_types),
-            default=[]
-        )
-    else:
-        selected_infections = []
-        st.sidebar.warning("'Infection' column not found for filtering.")
 
-    # Filter by Date Range
-    if date_cols:
-        date_objects = [pd.to_datetime(col).date() for col in date_cols]
-        min_date = min(date_objects)
-        max_date = max(date_objects)
-        selected_date_range = st.sidebar.date_input(
-            "Select Date Range",
-            value=(min_date, max_date),
-            min_value=min_date,
-            max_value=max_date
-        )
-    else:
-        selected_date_range = ()
+# Get risk columns for filtering and display
+metadata_cols = ['RagioneSociale', 'NomeVigneto']
+risk_cols = [col for col in df_original.columns if 'Risk_Percent' in col]
 
-    # Filter by Risk Score (slider)
-    if date_cols:
-        # Calculate max risk across all date columns for filtering
-        max_risk_overall = df_original[date_cols].max().max()
-        selected_risk_range = st.sidebar.slider(
-            "Filter by Maximum Risk (any day)",
-            min_value=0.0,
-            max_value=1.0,
-            value=(0.0, 1.0),
-            step=0.05
-        )
-    else:
-        selected_risk_range = (0.0, 1.0)
-        st.sidebar.warning("Date columns not found for risk filtering.")
+# --- Sidebar for Filtering ---
+st.sidebar.header("Filter Options")
 
-    # --- Applying Filters ---
-    df_filtered = df_original.copy()
+# Filter by Company/RagioneSociale (multiselect)
+if 'RagioneSociale' in df_original.columns:
+    company_values = sorted(df_original['RagioneSociale'].dropna().unique())
+    selected_companies = st.sidebar.multiselect(
+        "Select Company/Ragione Sociale",
+        options=company_values,
+        default=[]
+    )
+else:
+    selected_companies = []
+    st.sidebar.warning("'RagioneSociale' column not found for filtering.")
 
-    if selected_entes:
-        df_filtered = df_filtered[df_filtered['Ente'].isin(selected_entes)]
+# Filter by Vineyard Name (multiselect)
+if 'NomeVigneto' in df_original.columns:
+    vineyard_names = df_original['NomeVigneto'].unique()
+    selected_vineyards = st.sidebar.multiselect(
+        "Select Vineyard(s)",
+        options=sorted(vineyard_names),
+        default=[]
+    )
+else:
+    selected_vineyards = []
+    st.sidebar.warning("'NomeVigneto' column not found for filtering.")
 
-    if selected_vineyards:
-        df_filtered = df_filtered[df_filtered['NomeVigneto'].isin(selected_vineyards)]
+# Filter by Risk Type
+if risk_cols:
+    # Create a more user-friendly selection for risk types
+    risk_type_mapping = {}
+    for col in risk_cols:
+        if 'Avg' in col:
+            risk_type_mapping['Average'] = col
+        elif 'Oidium' in col:
+            risk_type_mapping['Oidium'] = col
+        elif 'Peronospora' in col:
+            risk_type_mapping['Peronospora'] = col
+    
+    selected_risk_types = st.sidebar.multiselect(
+        "Select Risk Type(s)",
+        options=list(risk_type_mapping.keys()),
+        default=[]
+    )
+else:
+    selected_risk_types = []
+    risk_type_mapping = {}
 
-    if selected_infections:
-        df_filtered = df_filtered[df_filtered['Infection'].isin(selected_infections)]
+# Filter by Risk Score (slider)
+if risk_cols:
+    # Calculate max risk across all risk columns for filtering
+    max_risk_overall = df_original[risk_cols].max().max()
+    selected_risk_range = st.sidebar.slider(
+        "Filter by Maximum Risk (any type)",
+        min_value=0.0,
+        max_value=1.0,
+        value=(0.0, 1.0),
+        step=0.05
+    )
+else:
+    selected_risk_range = (0.0, 1.0)
+    st.sidebar.warning("Risk columns not found for risk filtering.")
 
-    # Filter by date range - only show columns within selected range
-    if len(selected_date_range) == 2 and date_cols:
-        start_date = pd.to_datetime(selected_date_range[0])
-        end_date = pd.to_datetime(selected_date_range[1])
+# --- Applying Filters ---
+df_filtered = df_original.copy()
 
-        # Filter date columns to only show those within range
-        filtered_date_cols = [col for col in date_cols
-                              if start_date <= pd.to_datetime(col) <= end_date]
-        display_cols = metadata_cols + filtered_date_cols
+if selected_companies:
+    df_filtered = df_filtered[df_filtered['RagioneSociale'].isin(selected_companies)]
+
+if selected_vineyards:
+    df_filtered = df_filtered[df_filtered['NomeVigneto'].isin(selected_vineyards)]
+
+# Filter by selected risk types and reorder columns to put Average third
+if selected_risk_types:
+    selected_risk_cols = [risk_type_mapping[risk_type] for risk_type in selected_risk_types if risk_type in risk_type_mapping]
+    if selected_risk_cols:
+        # Reorder to put Average as third column (after RagioneSociale and NomeVigneto)
+        avg_col = next((col for col in selected_risk_cols if 'Avg' in col), None)
+        other_cols = [col for col in selected_risk_cols if col != avg_col]
+        if avg_col:
+            display_cols = metadata_cols + [avg_col] + other_cols
+        else:
+            display_cols = metadata_cols + selected_risk_cols
     else:
         display_cols = df_filtered.columns.tolist()
-        if 'date_columns' in display_cols:
-            display_cols.remove('date_columns')
-        filtered_date_cols = date_cols
+else:
+    # If no risk types selected, show all but reorder to put Average as third column
+    selected_risk_cols = risk_cols
+    avg_col = next((col for col in risk_cols if 'Avg' in col), None)
+    other_cols = [col for col in risk_cols if col != avg_col]
+    if avg_col:
+        display_cols = metadata_cols + [avg_col] + other_cols
+        selected_risk_cols = [avg_col] + other_cols
+    else:
+        display_cols = metadata_cols + risk_cols
+        selected_risk_cols = risk_cols
 
-    # Filter by risk score - keep rows where max risk across selected dates is within range
-    if filtered_date_cols:
-        df_filtered['max_risk'] = df_filtered[filtered_date_cols].max(axis=1)
+# Filter by risk score - keep rows where max risk across selected risk types is within range
+if selected_risk_cols:
+    # Ensure all selected risk columns have numeric values
+    for col in selected_risk_cols:
+        df_filtered[col] = pd.to_numeric(df_filtered[col], errors='coerce')
+    
+    # Drop rows with NaN values in risk columns
+    df_filtered = df_filtered.dropna(subset=selected_risk_cols)
+    
+    if len(df_filtered) > 0:
+        df_filtered['max_risk'] = df_filtered[selected_risk_cols].max(axis=1)
         df_filtered = df_filtered[
             (df_filtered['max_risk'] >= selected_risk_range[0]) &
             (df_filtered['max_risk'] <= selected_risk_range[1])
             ]
         df_filtered = df_filtered.drop('max_risk', axis=1)
 
-    # --- Displaying the Data ---
-    st.header("Prediction Results")
-    st.write(f"Displaying {len(df_filtered)} of {len(df_original)} total predictions.")
+# --- Displaying the Data ---
+st.header("Risk Prediction Results")
+st.write(f"Displaying {len(df_filtered)} of {len(df_original)} total vineyards.")
 
-    # Format risk columns as percentages for display
-    df_display = df_filtered[display_cols].copy()
-    for col in filtered_date_cols:
-        if col in df_display.columns:
-            df_display[col] = (df_display[col] * 100).round(1).astype(str) + '%'
+# Format risk columns as percentages for display
+df_display = df_filtered[display_cols].copy()
+for col in selected_risk_cols:
+    if col in df_display.columns:
+        # Handle NaN values and convert to percentage string
+        df_display[col] = df_display[col].apply(
+            lambda x: f"{x*100:.1f}%" if pd.notna(x) else "N/A"
+        )
 
-    st.dataframe(df_display.sort_values(by=["Ente", "IdVigneto", "Infection"]), use_container_width=True)
+# Create a function to highlight high risk values
+def highlight_high_risk(val):
+    if isinstance(val, str) and val.endswith('%'):
+        try:
+            risk_value = float(val.replace('%', ''))
+            if risk_value > 85:
+                return 'background-color: #ffcccc; color: #cc0000; font-weight: bold'
+        except:
+            pass
+    return ''
 
-    if st.checkbox("Show raw data for filtered results"):
-        st.write(df_filtered[display_cols])
+# Apply styling to the dataframe
+styled_df = df_display.style.applymap(highlight_high_risk, subset=[col for col in selected_risk_cols if col in df_display.columns])
 
-    # --- Summary Statistics ---
-    st.header("Summary Statistics")
+st.dataframe(styled_df, use_container_width=True)
 
-    if filtered_date_cols:
-        col1, col2 = st.columns(2)
+if st.checkbox("Show raw data for filtered results"):
+    st.write(df_filtered[display_cols])
 
-        with col1:
-            st.subheader("By Infection Type")
-            if 'Infection' in df_filtered.columns:
-                infection_stats = df_filtered.groupby('Infection')[filtered_date_cols].mean()
-                for infection in infection_stats.index:
-                    avg_risk = infection_stats.loc[infection].mean()
-                    st.metric(f"Average {infection} Risk", f"{avg_risk:.1%}")
+# --- Summary Statistics ---
+st.header("Summary Statistics")
 
-        with col2:
-            st.subheader("By Date")
-            daily_avg = df_filtered[filtered_date_cols].mean()
-            for date_col in filtered_date_cols[:3]:  # Show first 3 dates
-                st.metric(f"Average Risk {date_col}", f"{daily_avg[date_col]:.1%}")
+if selected_risk_cols:
+    col1, col2 = st.columns(2)
 
-    # --- Risk Trends Chart ---
-    if len(filtered_date_cols) > 1:
-        st.header("Risk Trends")
+    with col1:
+        st.subheader("By Risk Type")
+        for risk_col in selected_risk_cols:
+            avg_risk = df_filtered[risk_col].mean()
+            risk_name = risk_col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ')
+            st.metric(f"Average {risk_name} Risk", f"{avg_risk:.1%}")
 
-        # Create a chart showing average risk by infection type over time
-        chart_data = df_filtered.groupby('Infection')[filtered_date_cols].mean().T
-        chart_data.index = pd.to_datetime(chart_data.index)
+    with col2:
+        st.subheader("By Company")
+        if 'RagioneSociale' in df_filtered.columns and len(df_filtered) > 0:
+            company_stats = df_filtered.groupby('RagioneSociale')[selected_risk_cols].mean()
+            # Show top 5 companies by average risk
+            for company in company_stats.index[:5]:
+                avg_risk = company_stats.loc[company].mean()
+                st.metric(f"{company[:20]}..." if len(company) > 20 else company, f"{avg_risk:.1%}")
 
-        st.line_chart(chart_data)
+# --- Risk Distribution Chart ---
+if len(selected_risk_cols) > 0:
+    st.header("Risk Distribution")
+
+    # Create a chart showing risk distribution by type
+    if len(selected_risk_cols) == 1:
+        # Single risk type - show histogram
+        risk_col = selected_risk_cols[0]
+        risk_name = risk_col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ')
+        
+        # Create histogram data
+        hist_data = df_filtered[risk_col].value_counts().sort_index()
+        st.bar_chart(hist_data)
+        st.write(f"Distribution of {risk_name} Risk levels across vineyards")
+    else:
+        # Multiple risk types - show comparison
+        chart_data = df_filtered[selected_risk_cols].copy()
+        chart_data.columns = [col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ') for col in chart_data.columns]
+        
+        # Show average values as bar chart
+        avg_data = chart_data.mean().sort_values(ascending=False)
+        st.bar_chart(avg_data)
+        st.write("Average risk levels by type across all filtered vineyards")
