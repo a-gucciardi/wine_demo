@@ -41,12 +41,12 @@ def load_data_from_url(url):
             st.error("Error: The CSV file must contain 'RagioneSociale' and 'NomeVigneto' columns.")
             return None
 
-        # Get risk columns (columns containing "Risk_Percent" in their name)
+        # Get risk columns (columns containing "Risk" or "Probabilita" in their name)
         metadata_cols = ['RagioneSociale', 'NomeVigneto']
-        risk_cols = [col for col in df.columns if 'Risk_Percent' in col]
+        risk_cols = [col for col in df.columns if 'Risk' in col or 'Probabilita' in col]
 
         if not risk_cols:
-            st.error("Error: No risk percentage columns found in the CSV file.")
+            st.error("Error: No risk or probability columns found in the CSV file.")
             st.write("Available columns:", list(df.columns))
             return None
 
@@ -79,12 +79,12 @@ else:
     if 'RagioneSociale' not in df_original.columns or 'NomeVigneto' not in df_original.columns:
         st.error("Error: The CSV file must contain 'RagioneSociale' and 'NomeVigneto' columns.")
 
-    # Get risk columns (columns containing "Risk_Percent" in their name)
+    # Get risk columns (columns containing "Risk" or "Probabilita" in their name)
     metadata_cols = ['RagioneSociale', 'NomeVigneto']
-    risk_cols = [col for col in df_original.columns if 'Risk_Percent' in col]
+    risk_cols = [col for col in df_original.columns if 'Risk' in col or 'Probabilita' in col]
 
     if not risk_cols:
-        st.error("Error: No risk percentage columns found in the CSV file.")
+        st.error("Error: No risk or probability columns found in the CSV file.")
         st.write("Available columns:", list(df_original.columns))
 
     # The risk values are already as percentages, convert to decimal for internal processing
@@ -100,7 +100,7 @@ else:
 
 # Get risk columns for filtering and display
 metadata_cols = ['RagioneSociale', 'NomeVigneto']
-risk_cols = [col for col in df_original.columns if 'Risk_Percent' in col]
+risk_cols = [col for col in df_original.columns if 'Risk' in col or 'Probabilita' in col]
 
 # --- Sidebar for Filtering ---
 st.sidebar.header("Filter Options")
@@ -134,12 +134,16 @@ if risk_cols:
     # Create a more user-friendly selection for risk types
     risk_type_mapping = {}
     for col in risk_cols:
-        if 'Avg' in col:
-            risk_type_mapping['Average'] = col
-        elif 'Oidium' in col:
-            risk_type_mapping['Oidium'] = col
-        elif 'Peronospora' in col:
-            risk_type_mapping['Peronospora'] = col
+        if 'Oidium_Risk' in col:
+            risk_type_mapping['Oidium Risk'] = col
+        elif 'Peronospora_Risk' in col:
+            risk_type_mapping['Peronospora Risk'] = col
+        elif 'Avg_Risk' in col:
+            risk_type_mapping['Average Risk'] = col
+        elif 'Probabilita_OIDIO' in col:
+            risk_type_mapping['Oidium Probability'] = col
+        elif 'Probabilita_PERONOSPORA' in col:
+            risk_type_mapping['Peronospora Probability'] = col
     
     selected_risk_types = st.sidebar.multiselect(
         "Select Risk Type(s)",
@@ -174,30 +178,40 @@ if selected_companies:
 if selected_vineyards:
     df_filtered = df_filtered[df_filtered['NomeVigneto'].isin(selected_vineyards)]
 
-# Filter by selected risk types and reorder columns to put Average third
+# Filter by selected risk types and reorder columns as requested
 if selected_risk_types:
     selected_risk_cols = [risk_type_mapping[risk_type] for risk_type in selected_risk_types if risk_type in risk_type_mapping]
     if selected_risk_cols:
-        # Reorder to put Average as third column (after RagioneSociale and NomeVigneto)
-        avg_col = next((col for col in selected_risk_cols if 'Avg' in col), None)
-        other_cols = [col for col in selected_risk_cols if col != avg_col]
-        if avg_col:
-            display_cols = metadata_cols + [avg_col] + other_cols
-        else:
-            display_cols = metadata_cols + selected_risk_cols
+        display_cols = metadata_cols + selected_risk_cols
     else:
         display_cols = df_filtered.columns.tolist()
 else:
-    # If no risk types selected, show all but reorder to put Average as third column
-    selected_risk_cols = risk_cols
-    avg_col = next((col for col in risk_cols if 'Avg' in col), None)
-    other_cols = [col for col in risk_cols if col != avg_col]
-    if avg_col:
-        display_cols = metadata_cols + [avg_col] + other_cols
-        selected_risk_cols = [avg_col] + other_cols
-    else:
-        display_cols = metadata_cols + risk_cols
-        selected_risk_cols = risk_cols
+    # If no risk types selected, show all in the new requested order:
+    # Average Risk, Oidium Risk, Oidium Probability, Peronospora Risk, Peronospora Probability
+    selected_risk_cols = []
+    ordered_cols = []
+    
+    # Find each column type and add in the new requested order
+    avg_risk = next((col for col in risk_cols if 'Avg_Risk' in col), None)
+    oidium_risk = next((col for col in risk_cols if 'Oidium_Risk' in col), None)
+    oidium_prob = next((col for col in risk_cols if 'Probabilita_OIDIO' in col), None)
+    peronospora_risk = next((col for col in risk_cols if 'Peronospora_Risk' in col), None)
+    peronospora_prob = next((col for col in risk_cols if 'Probabilita_PERONOSPORA' in col), None)
+    
+    # Add columns in the new requested order: Avg, Oidium Risk, Oidium Prob, Peronospora Risk, Peronospora Prob
+    if avg_risk:
+        ordered_cols.append(avg_risk)
+    if oidium_risk:
+        ordered_cols.append(oidium_risk)
+    if oidium_prob:
+        ordered_cols.append(oidium_prob)
+    if peronospora_risk:
+        ordered_cols.append(peronospora_risk)
+    if peronospora_prob:
+        ordered_cols.append(peronospora_prob)
+    
+    selected_risk_cols = ordered_cols
+    display_cols = metadata_cols + ordered_cols
 
 # Filter by risk score - keep rows where max risk across selected risk types is within range
 if selected_risk_cols:
@@ -234,8 +248,8 @@ def highlight_high_risk(val):
     if isinstance(val, str) and val.endswith('%'):
         try:
             risk_value = float(val.replace('%', ''))
-            if risk_value > 85:
-                return 'background-color: #ffcccc; color: #cc0000; font-weight: bold'
+            if risk_value > 70:
+                return 'background-color: #ffe6e6; color: #990000; font-weight: bold'
         except:
             pass
     return ''
@@ -258,11 +272,23 @@ if selected_risk_cols:
         st.subheader("By Risk Type")
         for risk_col in selected_risk_cols:
             avg_risk = df_filtered[risk_col].mean()
-            risk_name = risk_col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ')
-            st.metric(f"Average {risk_name} Risk", f"{avg_risk:.1%}")
+            # Clean up column names for display
+            if 'Oidium_Risk' in risk_col:
+                risk_name = 'Oidium Risk'
+            elif 'Peronospora_Risk' in risk_col:
+                risk_name = 'Peronospora Risk'
+            elif 'Avg_Risk' in risk_col:
+                risk_name = 'Average Risk'
+            elif 'Probabilita_OIDIO' in risk_col:
+                risk_name = 'Oidium Probability'
+            elif 'Probabilita_PERONOSPORA' in risk_col:
+                risk_name = 'Peronospora Probability'
+            else:
+                risk_name = risk_col.replace('_', ' ')
+            st.metric(f"Average {risk_name}", f"{avg_risk:.1%}")
 
-    with col2:
-        st.subheader("By Company")
+        with col2:
+            st.subheader("By Company")
         if 'RagioneSociale' in df_filtered.columns and len(df_filtered) > 0:
             company_stats = df_filtered.groupby('RagioneSociale')[selected_risk_cols].mean()
             # Show top 5 companies by average risk
@@ -278,16 +304,43 @@ if len(selected_risk_cols) > 0:
     if len(selected_risk_cols) == 1:
         # Single risk type - show histogram
         risk_col = selected_risk_cols[0]
-        risk_name = risk_col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ')
+        # Clean up column names for display
+        if 'Oidium_Risk' in risk_col:
+            risk_name = 'Oidium Risk'
+        elif 'Peronospora_Risk' in risk_col:
+            risk_name = 'Peronospora Risk'
+        elif 'Avg_Risk' in risk_col:
+            risk_name = 'Average Risk'
+        elif 'Probabilita_OIDIO' in risk_col:
+            risk_name = 'Oidium Probability'
+        elif 'Probabilita_PERONOSPORA' in risk_col:
+            risk_name = 'Peronospora Probability'
+        else:
+            risk_name = risk_col.replace('_', ' ')
         
         # Create histogram data
         hist_data = df_filtered[risk_col].value_counts().sort_index()
         st.bar_chart(hist_data)
-        st.write(f"Distribution of {risk_name} Risk levels across vineyards")
+        st.write(f"Distribution of {risk_name} levels across vineyards")
     else:
         # Multiple risk types - show comparison
         chart_data = df_filtered[selected_risk_cols].copy()
-        chart_data.columns = [col.replace('_Risk_Percent_07/26-08/01', '').replace('_', ' ') for col in chart_data.columns]
+        # Clean up column names for chart
+        new_column_names = []
+        for col in chart_data.columns:
+            if 'Oidium_Risk' in col:
+                new_column_names.append('Oidium Risk')
+            elif 'Peronospora_Risk' in col:
+                new_column_names.append('Peronospora Risk')
+            elif 'Avg_Risk' in col:
+                new_column_names.append('Average Risk')
+            elif 'Probabilita_OIDIO' in col:
+                new_column_names.append('Oidium Probability')
+            elif 'Probabilita_PERONOSPORA' in col:
+                new_column_names.append('Peronospora Probability')
+            else:
+                new_column_names.append(col.replace('_', ' '))
+        chart_data.columns = new_column_names
         
         # Show average values as bar chart
         avg_data = chart_data.mean().sort_values(ascending=False)
