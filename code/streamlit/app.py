@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 
 today = datetime.today().date()
-LOCAL = True  # True if running locally, False for production
+LOCAL = False  # True if running locally, False for production
 GITHUB_RAW_URL = f"https://raw.githubusercontent.com/a-gucciardi/wine_demo/refs/heads/main/code/streamlit/formatted_infection_risks_{today}.csv"
 
 # --- Page Configuration ---
